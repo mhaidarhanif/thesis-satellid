@@ -1,26 +1,16 @@
 M Haidar Hanif's Thesis
 =======================
 
+Thesis about Satellid the Knowledge Manager.
+
 Structure
 ---------
 
 + assets: Images, videos, sounds
-+ contents: Thesis in LaTeX and Markdown
-+ notes: Misc things
-+ references: Personal references
++ contents: Thesis in LaTeX
++ docear: Literature management
++ notes: Miscellaneous things
++ references: Personal and organization references
 + slides: Presentation work
-+ sources: Actual scientific sources
-+ templates: LaTeX templates
-
-Highlight
----------
-
-+ [Abstract](contents/intro/abstract.md)
-
-Sections
---------
-
-+ {.tex}
-+ {.bib}
-+ {.md}
++ sources: Actual scientific and external sources
 
