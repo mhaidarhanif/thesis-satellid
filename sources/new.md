@@ -1,0 +1,16 @@
+http://pim.ischool.washington.edu/final%20PIM%20report.pdf
+
+http://sites.duke.edu/holliewhite/files/2011/10/Personal-Information-Management-Literature-Review-May-2010.pdf
+
+http://msr-waypoint.com/en-us/um/people/desney/publications/PIM2007-Chapter6.pdf
+
+
+History of the Personal Data Assistant (PDA)
+h2g2: The Hitchhiker's Guide to the Galaxy: Earth Edition
+http://h2g2.com/edited_entry/A2284229
+
+A list of Personal Information Management prototype tools
+http://pim.famnit.upr.si/pim/pimtools.html
+
+
+

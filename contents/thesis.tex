@@ -1,0 +1,183 @@
+\documentclass[%
+    % a5paper,
+    a4paper,
+    headinclude=true,
+    footinclude=true
+]{scrbook}
+%\KOMAExecuteOptions{fontsize=11pt}
+
+\usepackage{preamble}
+
+\begin{document}
+
+\selectlanguage{american}
+
+% ==================================================
+
+\frontmatter
+
+% --------------------------------------------------
+% Cover
+% --------------------------------------------------
+\def\dir{frontbackmatter}
+\input{\dir/cover.tex}
+%\input{\dir/subcover.tex}
+
+% --------------------------------------------------
+% Title
+% --------------------------------------------------
+\input{\dir/titlepage.tex}
+\input{\dir/titleback.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Signature
+% ---------
+% Approval
+% Declaration
+% --------------------------------------------------
+\input{\dir/sig-approval.tex}
+\clearpage
+\input{\dir/sig-declaration.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Acknowledgements
+% Abstract
+% --------------------------------------------------
+\input{\dir/acknowledgements.tex}
+\clearpage
+\input{\dir/thanks.tex}
+\clearpage
+\input{\dir/foreword.tex}
+\clearpage
+\input{\dir/preface.tex}
+\clearpage
+\input{\dir/abstract.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Publications
+% --------------------------------------------------
+%\def\dir{frontbackmatter}
+%\input{\dir/publications.tex}
+%\cleardoublepage
+
+% --------------------------------------------------
+% Contents
+% --------
+% Table of Contents
+% List of Figures
+% List of Tables
+% --------------------------------------------------
+\input{\dir/contents.tex}
+\cleardoublepage
+
+% ==================================================
+
+\mainmatter
+
+% --------------------------------------------------
+% Beginning
+% --------------------------------------------------
+\def\dir{chapters/beginning}
+\input{\dir/introduction.tex}
+\input{\dir/background.tex}
+\input{\dir/problem-definition.tex}
+\input{\dir/research-method.tex}
+\input{\dir/research-schedule.tex}
+\input{\dir/research-source.tex}
+\input{\dir/research-target.tex}
+\input{\dir/writing-structure.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Concept and Theory
+% ----------------------------
+----------------------
+\def\dir{chapters/theory}
+\input{\dir/javascript.tex}
+\input{\dir/json-ld.tex}
+\input{\dir/nodejs.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Implementation
+% Algorithm
+% Test
+% Design
+% Development
+% --------------------------------------------------
+\def\dir{chapters/implementation}
+\input{\dir/algorithm.tex}
+\input{\dir/design.tex}
+\input{\dir/development.tex}
+\input{\dir/mvp.tex}
+\input{\dir/test.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Evaluation and Proof
+% --------------------
+% Result
+% Analysis
+% System
+% Software
+% --------------------------------------------------
+\def\dir{chapters/evaluation}
+\input{\dir/system.tex}
+\input{\dir/software.tex}
+\input{\dir/result.tex}
+\input{\dir/analysis.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Closing
+% -------
+% Discussion
+% Conclusion
+% Suggestion
+% --------------------------------------------------
+\def\dir{chapters/closing}
+\input{\dir/discussion.tex}
+\input{\dir/conclusion.tex}
+\input{\dir/suggestion.tex}
+\cleardoublepage
+
+% ==================================================
+
+\backmatter
+
+% --------------------------------------------------
+% Bibliography | References | Sources | Literatures
+% --------------------------------------------------
+\def\dir{frontbackmatter}
+\input{\dir/bibliography.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Notes
+% --------------------------------------------------
+\cleardoublepage
+\def\dir{frontbackmatter/notes}
+\input{\dir/notation.tex}
+\input{\dir/acronyms.tex}
+\input{\dir/index.tex}
+\input{\dir/appendix.tex}
+%\input{\dir/glossary.tex}
+%\input{\dir/errata.tex}
+
+% --------------------------------------------------
+% Extra
+% --------------------------------------------------
+\pagebreak
+\def\dir{frontbackmatter/extra}
+\input{\dir/credits.tex}
+\input{\dir/license.tex}
+\input{\dir/colophon.tex}
+\input{\dir/cv.tex}
+
+% ==================================================
+
+\end{document}
+
