@@ -36,22 +36,22 @@
 % Approval
 % Declaration
 % --------------------------------------------------
-\input{\dir/sig-approval.tex}
+\input{\dir/sig-statement.tex}
 \clearpage
-\input{\dir/sig-declaration.tex}
+\input{\dir/sig-validation.tex}
 \cleardoublepage
 
 % --------------------------------------------------
 % Acknowledgements
 % Abstract
 % --------------------------------------------------
-\input{\dir/acknowledgements.tex}
-\clearpage
 \input{\dir/thanks.tex}
 \clearpage
 \input{\dir/foreword.tex}
 \clearpage
 \input{\dir/preface.tex}
+\clearpage
+\input{\dir/acknowledgements.tex}
 \clearpage
 \input{\dir/abstract.tex}
 \cleardoublepage
@@ -78,7 +78,7 @@
 \mainmatter
 
 % --------------------------------------------------
-% Beginning
+% Beginning Introduction
 % --------------------------------------------------
 \def\dir{chapters/beginning}
 \input{\dir/introduction.tex}
@@ -93,38 +93,33 @@
 
 % --------------------------------------------------
 % Concept and Theory
-% ----------------------------
-----------------------
+% --------------------------------------------------
 \def\dir{chapters/theory}
+\input{\dir/theory.tex}
+\input{\dir/kms.tex}
+\input{\dir/document-database.tex}
+\input{\dir/couchdb.tex}
 \input{\dir/javascript.tex}
+\input{\dir/json.tex}
 \input{\dir/json-ld.tex}
 \input{\dir/nodejs.tex}
 \cleardoublepage
 
 % --------------------------------------------------
 % Implementation
-% Algorithm
-% Test
-% Design
-% Development
 % --------------------------------------------------
 \def\dir{chapters/implementation}
+\input{\dir/implementation.tex}
 \input{\dir/algorithm.tex}
 \input{\dir/design.tex}
 \input{\dir/development.tex}
-\input{\dir/mvp.tex}
-\input{\dir/test.tex}
 \cleardoublepage
 
 % --------------------------------------------------
 % Evaluation and Proof
-% --------------------
-% Result
-% Analysis
-% System
-% Software
 % --------------------------------------------------
 \def\dir{chapters/evaluation}
+\input{\dir/evaluation.tex}
 \input{\dir/system.tex}
 \input{\dir/software.tex}
 \input{\dir/result.tex}
@@ -133,12 +128,9 @@
 
 % --------------------------------------------------
 % Closing
-% -------
-% Discussion
-% Conclusion
-% Suggestion
 % --------------------------------------------------
 \def\dir{chapters/closing}
+\input{\dir/closing.tex}
 \input{\dir/discussion.tex}
 \input{\dir/conclusion.tex}
 \input{\dir/suggestion.tex}
@@ -160,24 +152,29 @@
 % --------------------------------------------------
 \cleardoublepage
 \def\dir{frontbackmatter/notes}
+\input{\dir/glossary.tex}
 \input{\dir/notation.tex}
 \input{\dir/acronyms.tex}
 \input{\dir/index.tex}
 \input{\dir/appendix.tex}
-%\input{\dir/glossary.tex}
 %\input{\dir/errata.tex}
+\cleardoublepage
 
 % --------------------------------------------------
 % Extra
 % --------------------------------------------------
 \pagebreak
 \def\dir{frontbackmatter/extra}
+\input{\dir/extra.tex}
 \input{\dir/credits.tex}
 \input{\dir/license.tex}
 \input{\dir/colophon.tex}
 \input{\dir/cv.tex}
+\clearpage
 
 % ==================================================
+\def\dir{frontbackmatter}
+\input{\dir/finish.tex}
 
 \end{document}
 

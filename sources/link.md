@@ -1,9 +1,29 @@
-Semantic URL | https://en.wikipedia.org/wiki/Semantic_URL
-Data curation | https://en.wikipedia.org/wiki/Data_curation
-Microlearning | https://en.wikipedia.org/wiki/Microlearning
 
-Startup company | http://en.wikipedia.org/wiki/Startup_company
-Hacker ethic | https://en.wikipedia.org/wiki/Hacker_ethic
+Application programming interface
+https://en.wikipedia.org/wiki/Application_programming_interface
+
+Semantic URL
+https://en.wikipedia.org/wiki/Semantic_URL
+
+Data curation
+https://en.wikipedia.org/wiki/Data_curation
+
+Microlearning
+https://en.wikipedia.org/wiki/Microlearning
+
+Startup company
+http://en.wikipedia.org/wiki/Startup_company
+
+Hacker ethic
+https://en.wikipedia.org/wiki/Hacker_ethic
+
+JSON.org
+Ecma International
+http://json.org
+
+JSON.com
+Dave Romero
+http://json.com
 
 *  *  *
 

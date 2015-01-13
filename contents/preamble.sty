@@ -1,11 +1,17 @@
 % document options
-\newcommand{\myTitle}{Satellid: Rapid Micro Knowledge Manager Using Web Technology with Node.js and JSON-LD}
-\newcommand{\myTitleOnTitlePageLineOne}{Satellid: Rapid Micro Knowledge Manager Using Web Technology}
-\newcommand{\myTitleOnTitlePageLineTwo}{with Node.js and JSON-LD}
-\newcommand{\myName}{M Haidar Hanif}
+\newcommand{\myTitle}{Satellid: Open Rapid Micro Knowledge Manager Using Web Technology with Node.js and JSON-LD}
+\newcommand{\mySubtitle}{Managing Various Knowledge in Open, Rapid, Micro, Modular, Structured, Linked, and Transcluded Way}
+\newcommand{\myTitleOnTitlePageLineOne}{Satellid: Open Rapid Micro Knowledge Manager}
+\newcommand{\myTitleOnTitlePageLineTwo}{Using Web Technology with Node.js and JSON-LD}
+\newcommand{\myKeywords}{Memory, Database, Software, Knowledge Management, Web, Node.js, JSON, Open Source}
+\newcommand{\myName}{Muhammad Haidar Hanif}
+\newcommand{\myNPM}{54411850}
+\newcommand{\myDepTitle}{Bachelor of Informatics Engineering}
+\newcommand{\myDateSession}{0 February 2015}
+\newcommand{\myDatePassing}{0 February 2015}
 \newcommand{\mySupervisor}{Dr.\ Lulu Chaerani Munggaran}
-\newcommand{\myProfA}{Prof.\ Dr.\ A}
-\newcommand{\myProfB}{Prof.\ Dr.\ B}
+\newcommand{\myProfA}{Dr.\ A}
+\newcommand{\myProfB}{Dr.\ B}
 \newcommand{\myDepartment}{Department of Informatics Engineering}
 \newcommand{\myUni}{\protect{Gunadarma University}}
 \newcommand{\myLocation}{Jakarta, Indonesia}
@@ -35,11 +41,16 @@
     parts
 ]{classicthesis}
 %\usepackage{MnSymbol}
+\usepackage{setspace}
+\onehalfspacing
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em}
 
 % define page size and margins for the final print
 \usepackage{geometry}
-\geometry{paperwidth=18.91cm,paperheight=24.589cm,
-bindingoffset=0.89cm, % gutter
+\geometry{paperwidth=21cm,
+paperheight=28cm,
+bindingoffset=0.9cm, % gutter
 inner=2cm, % inside margin
 outer=4cm, % outside margin
 vmargin=2.5cm, % top and bottom margins
@@ -90,16 +101,20 @@ marginparwidth=3cm,
 \usepackage{hyperref}
 \hypersetup{%
     %draft,	% = no hyperlinking at all (useful in b/w printouts)
-    colorlinks=true, linktocpage=true, pdfstartpage=1, pdfstartview=FitV,%
+    colorlinks=true, linktocpage=true, pdfstartpage=1, pdfstartview=FitV,
     % uncomment the following line if you want to have black links (e.g., for printing)
-    %colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=1, pdfstartview=FitV,% 
-    breaklinks=true, pdfpagemode=UseNone, pageanchor=true, pdfpagemode=UseOutlines,%
-    plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,%
-    hypertexnames=true, pdfhighlight=/O,%hyperfootnotes=true,%nesting=true,%frenchlinks,%
-    urlcolor=webbrown, linkcolor=RoyalBlue, citecolor=webgreen, %pagecolor=RoyalBlue,%
-    %urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,%
-    pdftitle={\myTitle},%
-    pdfauthor={\myName, \myUni},%
+    %colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=1, pdfstartview=FitV,
+    breaklinks=true, pdfpagemode=UseNone, pageanchor=true, pdfpagemode=UseOutlines,
+    plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,
+    hypertexnames=true, pdfhighlight=/O,
+    %hyperfootnotes=true, %nesting=true, %frenchlinks,
+    urlcolor=CeruleanBright,
+    linkcolor=Cerulean,
+    citecolor=CeruleanBlue,
+    %pagecolor=RoyalBlue,
+    %pagecolor=Black,
+    pdftitle={\myTitle},
+    pdfauthor={\myName, \myUni},
     pdfsubject={},%
     pdfkeywords={},%
 }   
@@ -113,7 +128,7 @@ marginparwidth=3cm,
 \usepackage[%
     style=authoryear,%
     dashed=false,%
-    doi=false,%
+    doi=true,%
     isbn=false,%
     hyperref=auto,%
     backref,%
@@ -147,4 +162,13 @@ marginparwidth=3cm,
 
 % for cover page
 \usepackage{pdfpages}
+
+% Lists
+\usepackage[ampersand]{easylist}
+
+% New colors
+\definecolor{Cerulean}{cmyk}{1, 0.26, 0, 0.35}
+\definecolor{CeruleanBlue}{cmyk}{0.87, 0.74, 0, 0}
+\definecolor{CeruleanDark}{cmyk}{0.94, 0.45, 0, 0.51}
+\definecolor{CeruleanBright}{cmyk}{0.86, 0.20, 0, 0.16}
 

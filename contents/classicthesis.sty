@@ -181,11 +181,12 @@
 \PassOptionsToPackage{dvipsnames}{xcolor}
 	\RequirePackage{xcolor} % [dvipsnames] 
 \definecolor{halfgray}{gray}{0.55} % chapter numbers will be semi transparent .5 .55 .6 .0
-\definecolor{webgreen}{rgb}{0,.5,0}
-\definecolor{webbrown}{rgb}{.6,0,0}
-%\definecolor{Maroon}{cmyk}{0, 0.87, 0.68, 0.32}
-%\definecolor{RoyalBlue}{cmyk}{1, 0.50, 0, 0}
-%\definecolor{Black}{cmyk}{0, 0, 0, 0}
+\definecolor{webgreen}{rgb}{0, 0.5, 0}
+\definecolor{webbrown}{rgb}{0.6, 0, 0}
+\definecolor{Maroon}{cmyk}{0, 0.87, 0.68, 0.32}
+\definecolor{RoyalBlue}{cmyk}{1, 0.50, 0, 0}
+\definecolor{Black}{cmyk}{0, 0, 0, 0}
+\definecolor{DarkCerulean}{cmyk}{0.94, 0.45, 0, 0.51}
 
 % ********************************************************************
 % Font Stuff
@@ -206,7 +207,7 @@
         % default: Palatino
         \PassOptionsToPackage{osf,sc}{mathpazo}%
         \RequirePackage{mathpazo} % Palatino with real small caps and old style figures
-        \linespread{1.05} % a bit more for Palatino
+        % \linespread{1.3} % one-and-a-half spacing
     }
 
 \ifthenelse{\boolean{@beramono}}%

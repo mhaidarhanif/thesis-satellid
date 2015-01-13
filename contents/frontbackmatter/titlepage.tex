@@ -1,13 +1,17 @@
 %*******************************************************
 % Titlepage
 %*******************************************************
+\manualmark
+\addtocontents{toc}{\protect\vspace{\beforebibskip}} % to have the bib a bit from the rest in the toc
+\addcontentsline{toc}{chapter}{\tocEntry{\bibname}}
+
 \begin{titlepage}
 	% if you want the titlepage to be centered, uncomment and fine-tune the line below (KOMA classes environment)
-	%\begin{addmargin}[-1cm]{-3cm}
+	\begin{addmargin}[-1cm]{-3cm}
     \begin{center}
         \large
         \begingroup
-            \spacedlowsmallcaps{Bachelor Thesis Gunadarma No. 012345}
+            \spacedlowsmallcaps{Undergraduate Thesis Gunadarma No. 012345}
         \endgroup
 
         \hfill
@@ -22,7 +26,7 @@
         \vfill
 
         \begingroup
-            A bachelor thesis submitted to\\
+            An undergraduate thesis submitted to\\
             \spacedlowsmallcaps{Gunadarma University}
         \endgroup
         
@@ -30,7 +34,7 @@
 
         \begingroup
             for the degree of\\
-            \spacedlowsmallcaps{Bachelor of Informatics}
+            \spacedlowsmallcaps{Bachelor of Informatics Engineering}
         \endgroup
 
         \vfill
@@ -60,6 +64,6 @@
         \vfill                      
 
     \end{center}  
-  %\end{addmargin}       
+  \end{addmargin}       
 \end{titlepage}
 

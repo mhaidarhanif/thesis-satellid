@@ -1,7 +1,7 @@
 Abstract: Expanded
 ==================
 
-Keywords: memory, database, software, knowledge management, web, nodejs, json, open source
+Keywords: Memory, Database, Software, Knowledge Management, Web, Node.js, JSON, Open Source
 
 #Why
 Knowledge in our perspective mostly always defined as the thinking foundation within our everyday life.
