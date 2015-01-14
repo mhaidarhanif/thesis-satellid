@@ -1,6 +1,13 @@
 % \pdfbookmark[0]{Approval Signature}{sig-approval}
 \pdfbookmark[0]{Validation Page}{sig-validation}
 
+\newcommand{\namesigdate}[3][6cm]{%
+\begin{minipage}{#1}
+    #2 \vspace{3.0cm}\hrule\medskip
+    \small \textit{#3}
+\end{minipage}
+}
+
 \begingroup
 \let\clearpage\relax
 \let\cleardoublepage\relax
@@ -8,7 +15,60 @@
 \chapter{Validation Page}
 \label{chapter:sig-validation}
 
-...
+\begin{Center}
+Advisory Committee
+\end{Center}
+
+\smallskip
+
+\begin{table}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    No & Name  & Position \\ \hline \hline
+    1  & ~     & Chairman \\ \hline
+    2  & ~     & Member   \\ \hline
+    3  & ~     & Member   \\ \hline
+    \end{tabular}
+\end{table}
+
+\medskip
+
+\begin{FlushRight}
+Session Date: \myDateSession
+\end{FlushRight}
+
+\smallskip
+
+\begin{Center}
+Board of Examiners
+\end{Center}
+
+\begin{table}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    No & Name  & Position \\ \hline \hline
+    1  & ~     & Chairman \\ \hline
+    2  & ~     & Secretary   \\ \hline
+    3  & ~     & Member   \\ \hline
+    4  & ~     & Member   \\ \hline
+    5  & ~     & Member   \\ \hline
+    \end{tabular}
+\end{table}
+
+\medskip
+
+\begin{FlushRight}
+Passing Date: \myDatePassing
+\end{FlushRight}
+
+\begin{Center}
+Acknowledged By
+\end{Center}
+
+\noindent
+\namesigdate{Supervisor \\}{\mySupervisor}
+\hfill
+\namesigdate{Department Head of Bachelor’s \\ Defense Examination}{\myHeadExaminer}
 
 \endgroup
 

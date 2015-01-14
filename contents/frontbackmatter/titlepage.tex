@@ -1,17 +1,18 @@
 %*******************************************************
 % Titlepage
 %*******************************************************
+
 \manualmark
 \addtocontents{toc}{\protect\vspace{\beforebibskip}} % to have the bib a bit from the rest in the toc
 \addcontentsline{toc}{chapter}{\tocEntry{\bibname}}
 
 \begin{titlepage}
 	% if you want the titlepage to be centered, uncomment and fine-tune the line below (KOMA classes environment)
-	\begin{addmargin}[-1cm]{-3cm}
+	\begin{adjustwidth}{0cm}{0cm}
     \begin{center}
         \large
         \begingroup
-            \spacedlowsmallcaps{Undergraduate Thesis Gunadarma No. 012345}
+            \spacedlowsmallcaps{Undergraduate Thesis Gunadarma No. 000000}
         \endgroup
 
         \hfill
@@ -19,8 +20,8 @@
         \vfill
 
         \begingroup
-            \spacedallcaps{\myTitleOnTitlePageLineOne}\\
-            \spacedallcaps{\myTitleOnTitlePageLineTwo}
+            \spacedallcaps{\myTitleLineOne}\\
+            \spacedallcaps{\myTitleLineTwo}
         \endgroup
 
         \vfill
@@ -39,21 +40,19 @@
 
         \vfill
 
-%{
-%       \begingroup
-%           presented by\\
-%            \spacedlowsmallcaps{\myName}\\
-%            Bachelor of Informatics in Informatics Engineering (Gunadarma University)\\
-%            born 23 May 1993\\
-%            citizen of Depok, Indonesia
-%        \endgroup
-%}
+        \begingroup
+            presented by\\\spacedlowsmallcaps{\myName}\\
+            \myDepTitle\\in Informatics Engineering (\myUni)\\
+            born \myBirthdate\\
+            citizen of \myCitizenship
+        \endgroup
+
         \vfill
 
         \begingroup
             accepted on the recommendation of\\
-            \myProfA, examiner\\
-            \myProfB, co-examiner\\
+            \myExaminerA, examiner\\
+            \myExaminerB, co-examiner\\
             \mySupervisor, co-examiner
         \endgroup
 
@@ -64,6 +63,6 @@
         \vfill                      
 
     \end{center}  
-  \end{addmargin}       
+  \end{adjustwidth}       
 \end{titlepage}
 

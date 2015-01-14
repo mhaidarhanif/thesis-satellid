@@ -1,0 +1,82 @@
+\documentclass[%
+    % a5paper,
+    a4paper,
+    headinclude=true,
+    footinclude=true
+]{scrbook}
+%\KOMAExecuteOptions{fontsize=11pt}
+
+\usepackage{preamble}
+\usepackage{showframe}
+
+\begin{document}
+
+\selectlanguage{american}
+
+% ==================================================
+
+\frontmatter
+
+% --------------------------------------------------
+% Cover
+% --------------------------------------------------
+\def\dir{frontbackmatter}
+\input{\dir/cover.tex}
+\input{\dir/subcover.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Title
+% --------------------------------------------------
+\input{\dir/titlepage.tex}
+\input{\dir/titleback.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Signature
+% ---------
+% Approval
+% Declaration
+% --------------------------------------------------
+\input{\dir/sig-statement.tex}
+\clearpage
+\input{\dir/sig-validation.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Acknowledgements
+% Abstract
+% --------------------------------------------------
+\input{\dir/thanks.tex}
+\clearpage
+\input{\dir/foreword.tex}
+\clearpage
+\input{\dir/preface.tex}
+\clearpage
+\input{\dir/acknowledgements.tex}
+\clearpage
+\input{\dir/abstract.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Publications
+% --------------------------------------------------
+%\def\dir{frontbackmatter}
+%\input{\dir/publications.tex}
+%\cleardoublepage
+
+% --------------------------------------------------
+% Contents
+% --------
+% Table of Contents
+% List of Figures
+% List of Tables
+% --------------------------------------------------
+
+% ==================================================
+% --------------------------------------------------
+% Beginning Introduction
+% --------------------------------------------------
+
+\end{document}
+
