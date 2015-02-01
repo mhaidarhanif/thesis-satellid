@@ -1,12 +1,11 @@
 \documentclass[%
-    % a5paper,
     a4paper,
     headinclude=true,
     footinclude=true
 ]{scrbook}
-%\KOMAExecuteOptions{fontsize=11pt}
-\usepackage{showframe}
 \usepackage{preamble}
+
+\usepackage{showframe}
 
 \begin{document}
 
@@ -98,7 +97,7 @@
 \def\dir{chapters/theory}
 \input{\dir/theory.tex}
 \input{\dir/kms.tex}
-\input{\dir/document-database.tex}
+\input{\dir/database.tex}
 \input{\dir/couchdb.tex}
 \input{\dir/javascript.tex}
 \input{\dir/json.tex}
@@ -153,7 +152,7 @@
 % --------------------------------------------------
 \cleardoublepage
 \def\dir{frontbackmatter/notes}
-\input{\dir/glossary.tex}
+%\input{\dir/glossary.tex}
 \input{\dir/notation.tex}
 \input{\dir/acronyms.tex}
 \input{\dir/index.tex}

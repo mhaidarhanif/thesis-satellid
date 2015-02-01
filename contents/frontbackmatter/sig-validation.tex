@@ -1,9 +1,12 @@
-% \pdfbookmark[0]{Approval Signature}{sig-approval}
-\pdfbookmark[0]{Validation Page}{sig-validation}
-
 \newcommand{\namesigdate}[3][6cm]{%
 \begin{minipage}{#1}
     #2 \vspace{3.0cm}\hrule\medskip
+    \small \textit{#3}
+\end{minipage}
+}
+\newcommand{\namesigdatelong}[3][6cm]{%
+\begin{minipage}{#1}
+    #2 \vspace{2.4cm}\hrule\medskip
     \small \textit{#3}
 \end{minipage}
 }
@@ -15,60 +18,56 @@
 \chapter{Validation Page}
 \label{chapter:sig-validation}
 
-\begin{Center}
+\begin{center}
 Advisory Committee
-\end{Center}
+\end{center}
 
 \smallskip
 
-\begin{table}
-    \begin{tabular}{|c|c|c|}
-    \hline
-    No & Name  & Position \\ \hline \hline
-    1  & ~     & Chairman \\ \hline
-    2  & ~     & Member   \\ \hline
-    3  & ~     & Member   \\ \hline
-    \end{tabular}
-\end{table}
+\begin{tabularx}{\textwidth}{|c|X|c|}
+	\toprule
+	\tableheadline{No.} &	\tableheadline{Name} & \tableheadline{Position} \\
+	\midrule
+  1 & abc & Chairman  \\
+  2 & abc & Member    \\
+  3 & abc & Member    \\
+	\bottomrule
+\end{tabularx}
 
-\medskip
-
-\begin{FlushRight}
+\begin{flushright}
 Session Date: \myDateSession
-\end{FlushRight}
+\end{flushright}
 
 \smallskip
 
-\begin{Center}
+\begin{center}
 Board of Examiners
-\end{Center}
+\end{center}
 
-\begin{table}
-    \begin{tabular}{|c|c|c|}
-    \hline
-    No & Name  & Position \\ \hline \hline
-    1  & ~     & Chairman \\ \hline
-    2  & ~     & Secretary   \\ \hline
-    3  & ~     & Member   \\ \hline
-    4  & ~     & Member   \\ \hline
-    5  & ~     & Member   \\ \hline
-    \end{tabular}
-\end{table}
+\begin{tabularx}{\textwidth}{|c|X|c|}
+	\toprule
+	\tableheadline{No.} &	\tableheadline{Name} & \tableheadline{Position} \\
+	\midrule
+  1 & abc & Chairman  \\
+  2 & abc & Secretary \\
+  3 & abc & Member    \\
+  4 & abc & Member    \\
+  5 & abc & Member    \\
+	\bottomrule
+\end{tabularx}
 
-\medskip
-
-\begin{FlushRight}
+\begin{flushright}
 Passing Date: \myDatePassing
-\end{FlushRight}
+\end{flushright}
 
-\begin{Center}
+\begin{center}
 Acknowledged By
-\end{Center}
+\end{center}
 
 \noindent
-\namesigdate{Supervisor \\}{\mySupervisor}
+\namesigdate{Supervisor}{\mySupervisor}
 \hfill
-\namesigdate{Department Head of Bachelor’s \\ Defense Examination}{\myHeadExaminer}
+\namesigdatelong{Department Head of Bachelor’s\\Defense Examination}{\myHeadExaminer}
 
 \endgroup
 

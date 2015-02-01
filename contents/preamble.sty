@@ -1,16 +1,12 @@
 \usepackage{xspace}
-\usepackage{changepage}
-\usepackage{mdframed}
-\usepackage{datetime}
 
 % document options
-%\newcommand{\myTitleLineOne}{Satellid: Open/Rapid/Micro Knowledge Manager Using Web Technology}
-%\newcommand{\myTitleLineTwo}{with JavaScript, Node.js, NoSQL, and Linked Data}
 \newcommand{\myTitleLineOne}{Satellid: Open Knowledge Manager}
-\newcommand{\myTitleLineTwo}{Using Web Technology and Linked Data}
+\newcommand{\myTitleLineTwo}{With Web Technologies \& Linked Data}
 \newcommand{\myTitle}{\myTitleLineOne \xspace \myTitleLineTwo}
 \newcommand{\mySubtitle}{Managing Various Knowledge in Open, Rapid, Micro, Modular, Structured, Linked, and Transcluded Way}
 \newcommand{\myKeywords}{Memory, Database, Software, Knowledge Management, Web, Node.js, JSON, Open Source}
+\newcommand{\mySubject}{Software Engineering and Database}
 \newcommand{\myThesisType}{Undergraduate Thesis}
 \newcommand{\myName}{Muhammad Haidar Hanif}
 \newcommand{\myNPM}{54411850}
@@ -28,19 +24,32 @@
 \newcommand{\myLocation}{Jakarta, Indonesia}
 \newcommand{\myCitizenship}{Depok, Indonesia}
 \newcommand{\myYear}{2015}
-\newcommand{\myMonth}{January}
+\newcommand{\myYearFirst}{2014}
+\newcommand{\myYearLast}{2015}
+\newcommand{\myMonth}{February}
+\newcommand{\myMonthFirst}{December}
+\newcommand{\myMonthLast}{March}
 \newcommand{\myTime}{\myMonth \xspace \myYear}
 \newcommand{\myDateSession}{0 February 2015}
 \newcommand{\myDatePassing}{0 February 2015}
 \newcommand{\myVersion}{1.0.0}
 
+% paging
+\usepackage{mdframed}
+\usepackage{changepage}
+\usepackage{datetime}
+\usepackage[titletoc,title]{appendix}
+
 % character encoding and languages
 \usepackage[american]{babel}
 \usepackage[utf8]{inputenc}
+% \usepackage[none]{hyphenat}
+\hyphenpenalty=1000
+\exhyphenpenalty=1000
 %\input glyphtounicode
 %\pdfgentounicode=1
 
-% math packages
+% Math packages
 \usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -48,6 +57,7 @@
 \usepackage{bm}
 \usepackage{mathtools}
 
+%\usepackage[document]{ragged2e}
 % thesis style
 \usepackage[%
 %    drafting,
@@ -57,23 +67,21 @@
     floatperchapter,
     parts
 ]{classicthesis}
-%\usepackage{MnSymbol}
-\usepackage[document]{ragged2e}
 \usepackage{setspace}
 \onehalfspacing
-\setlength{\parindent}{2em}
-\setlength{\parskip}{1em}
+\setlength{\parindent}{3ex}
+\setlength{\parskip}{0.5ex}
 
 % define page size and margins for the final print
 \usepackage{geometry}
 \geometry{paperwidth=21cm,
 paperheight=28cm,
 bindingoffset=0.9cm, % gutter
-inner=2cm, % inside margin
+inner=3cm, % inside margin
 outer=4cm, % outside margin
-vmargin=2.5cm, % top and bottom margins
-marginparsep=0.6cm,
-marginparwidth=3cm,
+vmargin=2cm, % top and bottom margins
+%marginparsep=0.5cm,
+%marginparwidth=3cm,
 }
 
 % tables
@@ -118,6 +126,10 @@ marginparwidth=3cm,
 %\usepackage{bookmark,hyperref}
 \usepackage{hyperref}
 \hypersetup{%
+    pdftitle={\myTitle},
+    pdfauthor={\myName, \myUni},
+    pdfsubject={\mySubject},%
+    pdfkeywords={\myKeywords},%
     %draft,	% = no hyperlinking at all (useful in b/w printouts)
     colorlinks=true, linktocpage=true, pdfstartpage=1, pdfstartview=FitV,
     % uncomment the following line if you want to have black links (e.g., for printing)
@@ -130,11 +142,7 @@ marginparwidth=3cm,
     linkcolor=Cerulean,
     citecolor=CeruleanBlue,
     %pagecolor=RoyalBlue,
-    %pagecolor=Black,
-    pdftitle={\myTitle},
-    pdfauthor={\myName, \myUni},
-    pdfsubject={},%
-    pdfkeywords={},%
+    %pagecolor=Black
 }   
 \renewcommand{\subsectionautorefname}{Subsection}
 \renewcommand{\sectionautorefname}{Section}
@@ -175,6 +183,8 @@ marginparwidth=3cm,
 \usepackage{acronym} % nice macros for handling all acronyms in the thesis
 \renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms
 
+% Counters
+\usepackage{chngcntr}
 % dummy counter for correct TOC etc
 \newcounter{dummy}
 
@@ -183,10 +193,31 @@ marginparwidth=3cm,
 
 % Lists
 \usepackage[ampersand]{easylist}
+\AtBeginEnvironment{easylist}
+  {\ListProperties(
+    Space*=0.5ex,
+    Progressive*=0.5ex,
+    Start1=1,
+    Indent=0.5ex,
+    Margin=3ex,
+    Margin2=6ex,
+    Margin3=9ex,
+    Margin4=12ex,
+    Margin5=15ex,
+    Hang=true)}
+  {}
+  {}
+
+% Characters
+\usepackage{MnSymbol}
+\usepackage{bbding}
+\usepackage{pifont}
+\newcommand*\itar{\item[\ding{228}]}
 
 % New colors
 \definecolor{Cerulean}{cmyk}{1, 0.26, 0, 0.35}
 \definecolor{CeruleanBlue}{cmyk}{0.87, 0.74, 0, 0}
 \definecolor{CeruleanDark}{cmyk}{0.94, 0.45, 0, 0.51}
 \definecolor{CeruleanBright}{cmyk}{0.86, 0.20, 0, 0.16}
+\definecolor{RoyalPurple}{rgb}{0.47, 0.32, 0.66}
 

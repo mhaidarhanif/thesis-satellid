@@ -26,12 +26,12 @@ Profile
 
 ### Company
 
-Company name: Hazeorid
-Product name: Satellid
++ Company name: Hazeorid
++ Product name: Satellid
 
 ### Founding Members Plan
 
-+ Technic: Planning, development, programming, system maintenance
++ Technical: Planning, development, programming, system maintenance
 + Business: Selling, marketing, business and financial
 + Design: Visualization, user interface and experience
 
@@ -42,14 +42,14 @@ Work Plan
 
 ### 2014
 
-+ Dec: ...
++ Dec: Gathering requirements
 
 ### 2015
 
-+ Jan: ...
-+ Feb: ...
-+ Mar: ...
-+ Apr: ...
++ Jan: Starting document
++ Feb: Working prototype
++ Mar: Finishing document and prototype
++ Apr: Preselling
 + May: ...
 + Jun: ...
 + Jul: ...
@@ -57,14 +57,19 @@ Work Plan
 + Sep: ...
 + Oct: ...
 + Nov: ...
++ Dec: ...
+
+### 2016
+
+...
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 Analysis
 --------
 
-### [Kelayakan Produk]
+### Product Feasibility
 
-+ URL Survei: ...
-+ Hasil Survei: ...
++ Survey URL: ...
++ Survey Result: ...
 

@@ -1,6 +1,15 @@
-\pdfbookmark[0]{Appendix}{appendix}
-\chapter{Appendix}
 \label{chap:appendix}
 
-\appendix
+\def\dir{frontbackmatter/notes/appendix}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+\renewcommand{\thesection}{\Alph{section}}
+
+\begin{appendices}
+
+\input{\dir/open-source.tex}
+\input{\dir/formats-protocols.tex}
+\input{\dir/business-model-canvas.tex}
+
+\end{appendices}
 

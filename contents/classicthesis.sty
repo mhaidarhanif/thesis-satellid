@@ -178,7 +178,7 @@
 % ********************************************************************                
 % Colors
 % ********************************************************************
-\PassOptionsToPackage{dvipsnames}{xcolor}
+\PassOptionsToPackage{usenames,dvipsnames,svgnames,table}{xcolor}
 	\RequirePackage{xcolor} % [dvipsnames] 
 \definecolor{halfgray}{gray}{0.55} % chapter numbers will be semi transparent .5 .55 .6 .0
 \definecolor{webgreen}{rgb}{0, 0.5, 0}
@@ -235,7 +235,7 @@
 
 % ********************************************************************
 % Textblock size
-%*******************************************************
+% ********************************************************************   
 \@ifpackageloaded{typearea}%
 	{\relax}{%
 		\RequirePackage{typearea}%
@@ -356,7 +356,7 @@
     \lehead{\mbox{\llap{\small\thepage\kern2em}\headmark\hfil}}
     \rohead{\mbox{\hfil{\headmark}\rlap{\small\kern2em\thepage}}}
     \renewcommand{\headfont}{\small}  
-%    \DeclareRobustCommand{\fixBothHeadlines}[2]{} % <--- ToDo
+%    \DeclareRobustCommand{\fixBothHeadlines}[2]{} % <--- TODO
     % hack to get the content headlines right (thanks, Lorenzo!)
 		\def\toc@heading{%
 	 		\ifthenelse{\boolean{@nochapters}}%
@@ -409,7 +409,7 @@
     % spacing
     \ifthenelse{\boolean{@nochapters}}%
         {\relax}%
-        {\titlespacing*{\chapter}{0pt}{1\baselineskip}{1.2\baselineskip}}
+        {\titlespacing*{\chapter}{0pt}{1\baselineskip}{1\baselineskip}}
     \titlespacing*{\section}{0pt}{1.25\baselineskip}{1\baselineskip} 
     \titlespacing*{\subsection}{0pt}{1.25\baselineskip}{1\baselineskip}
     \titlespacing*{\paragraph}{0pt}{1\baselineskip}{1\baselineskip}
