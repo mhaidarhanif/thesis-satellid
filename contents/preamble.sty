@@ -2,10 +2,10 @@
 
 % document options
 \newcommand{\myTitleLineOne}{Satellid: Open Knowledge Manager}
-\newcommand{\myTitleLineTwo}{With Web Technologies \& Linked Data}
+\newcommand{\myTitleLineTwo}{With Web Technologies}
 \newcommand{\myTitle}{\myTitleLineOne \xspace \myTitleLineTwo}
-\newcommand{\mySubtitle}{Managing Various Knowledge in Open, Rapid, Micro, Modular, Structured, Linked, and Transcluded Way}
-\newcommand{\myKeywords}{Memory, Database, Software, Knowledge Management, Web, Node.js, JSON, Open Source}
+\newcommand{\mySubtitle}{Managing Various Knowledge in Open, Rapid, and Micro Way}
+\newcommand{\myKeywords}{Database, JSON, Knowledge Management, Memory, Node.js, Open Source, Software, Web}
 \newcommand{\mySubject}{Software Engineering and Database}
 \newcommand{\myThesisType}{Undergraduate Thesis}
 \newcommand{\myName}{Muhammad Haidar Hanif}
@@ -32,8 +32,9 @@
 \newcommand{\myMonthFirst}{December}
 \newcommand{\myMonthLast}{March}
 \newcommand{\myTime}{\myMonth \xspace \myYear}
-\newcommand{\myDateSession}{0 February 2015}
-\newcommand{\myDatePassing}{0 February 2015}
+\newcommand{\myDatePrint}{March 2015}
+\newcommand{\myDateSession}{0 March 2015}
+\newcommand{\myDatePassing}{0 March 2015}
 \newcommand{\myVersion}{1.0.0}
 
 % paging
@@ -99,7 +100,7 @@ vmargin=2.5cm, % top and bottom margins
 
 % fixes for marginpar and latex
 \usepackage{mparhack}
-\usepackage{fixltx2e} 
+\usepackage{fixltx2e}
 
 % indexing
 \usepackage{makeidx}
@@ -115,6 +116,8 @@ vmargin=2.5cm, % top and bottom margins
 \usepackage{tkz-gm} % graphical models
 \usepackage{caption}
 \usepackage{subcaption}
+\expandafter\def\csname ver@subfig.sty\endcsname{}
+\usepackage{svg}
 
 % table
 \usepackage{slashbox}
@@ -145,7 +148,7 @@ vmargin=2.5cm, % top and bottom margins
     citecolor=CeruleanBlue,
     %pagecolor=RoyalBlue,
     %pagecolor=Black
-}   
+}
 \renewcommand{\subsectionautorefname}{Subsection}
 \renewcommand{\sectionautorefname}{Section}
 \renewcommand{\chapterautorefname}{Chapter}
@@ -162,12 +165,17 @@ vmargin=2.5cm, % top and bottom margins
     backref,%
     backrefstyle=three,%
     maxbibnames=99,%
-    maxcitenames=3,
+    maxcitenames=3,%
+    %urldate=comp,%
+    dateabbrev=false%
 ]{biblatex}
 %\renewbibmacro{in:}{%
 %  \ifentrytype{article}{}{%
 %  \printtext{\bibstring{in}\intitlepunct}}}
 \bibliography{references}
+\DefineBibliographyStrings{english}{%
+urlseen = {Retrieved}
+}
 
 % theorems, definitions
 \newtheorem{theorem}{Theorem}[chapter]
@@ -222,4 +230,3 @@ vmargin=2.5cm, % top and bottom margins
 \definecolor{CeruleanDark}{cmyk}{0.94, 0.45, 0, 0.51}
 \definecolor{CeruleanBright}{cmyk}{0.86, 0.20, 0, 0.16}
 \definecolor{RoyalPurple}{rgb}{0.47, 0.32, 0.66}
-

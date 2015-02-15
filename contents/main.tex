@@ -83,11 +83,11 @@
 \def\dir{chapters/intro}
 \input{\dir/introduction.tex}
 \input{\dir/background.tex}
-\input{\dir/problem-definition.tex}
 \input{\dir/research-method.tex}
-\input{\dir/research-schedule.tex}
-\input{\dir/research-source.tex}
-\input{\dir/research-target.tex}
+%\input{\dir/research-schedule.tex}
+%\input{\dir/research-source.tex}
+%\input{\dir/problem-definition.tex}
+\input{\dir/problem-scope.tex}
 \input{\dir/writing-structure.tex}
 \cleardoublepage
 
@@ -98,11 +98,19 @@
 \input{\dir/theory.tex}
 \input{\dir/kms.tex}
 \input{\dir/database.tex}
-\input{\dir/couchdb.tex}
-\input{\dir/javascript.tex}
-\input{\dir/json.tex}
-\input{\dir/json-ld.tex}
+\input{\dir/documentdb.tex}
+\input{\dir/javascript-json.tex}
 \input{\dir/nodejs.tex}
+\input{\dir/framework.tex}
+\cleardoublepage
+
+% --------------------------------------------------
+% Analysis & Design
+% --------------------------------------------------
+\def\dir{chapters/analysis-design}
+\input{\dir/analysis-design.tex}
+\input{\dir/logic.tex}
+\input{\dir/design.tex}
 \cleardoublepage
 
 % --------------------------------------------------
@@ -110,20 +118,7 @@
 % --------------------------------------------------
 \def\dir{chapters/implementation}
 \input{\dir/implementation.tex}
-\input{\dir/algorithm.tex}
-\input{\dir/design.tex}
 \input{\dir/development.tex}
-\cleardoublepage
-
-% --------------------------------------------------
-% Evaluation and Proof
-% --------------------------------------------------
-\def\dir{chapters/evaluation}
-\input{\dir/evaluation.tex}
-\input{\dir/system.tex}
-\input{\dir/software.tex}
-\input{\dir/result.tex}
-\input{\dir/analysis.tex}
 \cleardoublepage
 
 % --------------------------------------------------
@@ -131,7 +126,6 @@
 % --------------------------------------------------
 \def\dir{chapters/closing}
 \input{\dir/closing.tex}
-\input{\dir/discussion.tex}
 \input{\dir/conclusion.tex}
 \input{\dir/suggestion.tex}
 \cleardoublepage
@@ -152,10 +146,10 @@
 % --------------------------------------------------
 \def\dir{frontbackmatter/notes}
 %\input{\dir/glossary.tex}
-\input{\dir/notation.tex}
+%\input{\dir/notation.tex}
 \input{\dir/acronyms.tex}
 \input{\dir/index.tex}
-\input{\dir/appendix.tex}
+%\input{\dir/appendix.tex}
 %\input{\dir/errata.tex}
 \cleardoublepage
 
@@ -176,4 +170,3 @@
 \input{\dir/finish.tex}
 
 \end{document}
-

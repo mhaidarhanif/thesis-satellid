@@ -2,43 +2,55 @@
 \label{sec:database}
 
 Now we can specify the foundational data collection structure we will use, which is a database. And beyond that, the relation of the database with the knowledge manager and why we should use it.
-
-% --------------------------------------------------
-\subsection{Data}
-
-Data\index{data} is a
-
-% --------------------------------------------------
-\subsection{Database}
-
 \ac{DB}\index{database} is the most used way or structured set to organize collection of information that can be accessed, managed, updated, deleted, and others.
 It is also can be programmed as such.
+We involve database system and \ac{DBMS} to take care of our database.
+Note that even database is principally organize information, we can utilize it to organize knowledge if the upper layer we configure database as the storage while interacting with the database is designed for managing traffic of knowledge.
 
 % --------------------------------------------------
 \subsection{Database System}
 
-While \ac{DBS}\index{database system} is a computerized record keeping system with the overall purpose of maintaining information and making it available whenever required. 
-The \ac{DBS} typically stores related data in a computer system.~\parencite{Foster2014Intro}
+\ac{DBS}\index{database system} is a computerized record keeping system with the overall purpose of maintaining information and making it available whenever required.
+The \ac{DBS} typically stores related data in a computer system.~\autocite{Foster2014Intro}
 
 % --------------------------------------------------
 \subsection{Database Management System}
 
-\ac{DBMS}\index{database management system|see{DBMS}} is a
-\parencite{Foster2014Intro}
-
-Most popular \ac{DBMS} used today are
+\ac{DBMS}\index{database management system|see{DBMS}} is a set of programs that allow for the
+management of a database.~\autocite{Foster2014Intro}
+In short, it is the database program, the software system that uses a standard method of cataloging, retrieving, and running queries on data. \ac{DBMS} manages incoming data, organizes it, and provides ways for the data to be modified or extracted by users or other programs.~\autocite{TechTerms:2014:DBMS}
+Most popular \ac{DBMS} used today are categorized in an Structured Query Language (\ac{SQL}) database and Not Only SQL (\ac{NoSQL}) database.
 
 % --------------------------------------------------
 \subsection{NoSQL Database}
 
-\ac{NoSQL}\index{not only SQL|see{NoSQL}} database, the counterpart of \ac{SQL}\index{Structured Query Language|see{SQL}} database, is a
-NoSQL\index{NoSQL} model can be much better or suitable than SQL\index{SQL} in terms of managing document
+\ac{NoSQL}\index{not only SQL|see{NoSQL}} database, the counterpart of \ac{SQL}\index{Structured Query Language|see{SQL}} database, is a a set of concepts that allows the rapid and efficient processing of data sets with a focus on performance, reliability, and agility.~\autocite{McCreary2014NoSQL}
+It embraces the broad variety of different cases that require more ways to manage database specially in the differentiation of data volume, objective view and close similarity with real world, the access frequency, and demand of higher perfornace.
 
-%%% provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases.
+\ac{NoSQL}\index{NoSQL} model can be much better or suitable than SQL\index{SQL} in terms of managing data that is cannot be modeled after table or there is no need for relation between each data.
+Moreover, \ac{NoSQL} often not using a schema or entity-relational model as its primary data model, so the data model is flexible enough to be modified with ease later.
+Even though, it is still important to pay attention to schema that is formed by creating the data inside \ac{NoSQL} database.
+This way of storing data can storae and retrieve data that is other than in tabular form and without relation.
+There are various types of NoSQL databases for:
+
+\begin{easylist}
+  & Document database
+  & Graph stores
+  & Key-value stores
+  & Wide column stores
+\end{easylist}
 
 % --------------------------------------------------
 \subsection{Document Database}
 
-\ldots
+With many \ac{NoSQL} database types available, one of them and most popular is document database\index{document database}, a database that oriented for processing pair of  key with a complex data structure known as a document.
+Documents can contain many different key-value pairs, or key-array pairs, or even nested documents.~\autocite{MongoDB:2015:NoSQL}
+Document database itself by design is really resemble the real-world data as we seen daily.
+For example, we can see that a voucher, ticket, letter, invoice, are all documents consist of label and field which equate with key and complex data.
 
+% --------------------------------------------------
+\subsection{Reason of Using Database}
 
+As we know prior of computer system, knowledge management has been around for a long time.
+But the manual process of managing and transferring knowledge in such a traditional way like writing down on paper or board, speaking in person, communicating via phone or chat are not effective and efficient.
+Therefore although those ways of doing can also be continued or complemented, requisite of doing it faster and easier is recommended to use completely the help of a database-powered \ac{KMS}.
