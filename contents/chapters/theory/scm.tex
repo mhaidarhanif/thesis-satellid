@@ -1,0 +1,40 @@
+\section{Source Code Management}
+\label{sec:scm}
+
+\ac{SCM}\index{source code management} or in similar context also called \ac{VCS}\index{version control system} is a system that records changes to a file or set of files over time so that you can recall specific versions later.~\autocite{Chacon:2014:ProGit:27}
+\ac{VCS} can be used for/with nearly any type of file on a computer, apart from is it a source code of program or not.
+With this tool, we can historically track each changes of our files.
+Sometimes very needed when we want to revert back the files or even an entire repository to the previous state we mistakenly edit, also redo it back to future state.
+More features also include comparing difference in changes, see who created or modified what, and most of all is enable an easier way to collaborate with more than one person.
+The specific style of \ac{VCS} we're using is a \ac{DVCS}.
+\ac{DVCS} enables full mirror of the repository, so there is an indepentent access and modification for each in server or local repository, illustrated as such in \autoref{fig:dvcs}.
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[height=7cm]{\dir/include/dvcs.png}
+    \caption[DVCS illustrated]{DVCS illustrated}
+    \label{fig:dvcs}
+\end{figure}
+
+% --------------------------------------------------
+\subsection{Git}
+
+Git is more than a \ac{VCS}, it is a \ac{DVCS} which takes a decentralized way of managing a repository.
+Like in \autoref{fig:scm:git}, we can see how Git works at a glance.
+
+\begin{figure}[htb]
+    \centering
+    %\includegraphics[width=\textwidth]{\dir/include/git}
+    %\caption[Git illustrated]{Git illustrated with~\autocite{Mercury2014MVP}}
+    \label{fig:git}
+\end{figure}
+
+% --------------------------------------------------
+\subsection{GitHub}
+
+In order to distribute and help a better colloaboration with Git, we use a Git hosting service called GitHub.
+GitHub is a web-based service for Git repositories that offers \ac{DVCS} and \ac{SCM} features, also combined with various useful features like issue tracking and code review.
+It is one of the most used collaboration tool for a lot of developers and projects.
+Many open-source projects are using it and hosted in it.
+Other alternatives available that presented as a web service are BitBucket, Assembla, and Kiln.
+In general, those are places where everyone can share their source code files and even stories with the world.

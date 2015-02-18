@@ -4,7 +4,7 @@
 There are a lot of cases on why we're choosing to build a new solution in the form of a simpler knowledge manager or commonly defined as a \ac{KMS}\index{knowledge management system}.
 Briefly, based by need and intend to create a new knowledge manager that allows us to have a better and more organized knowledge.
 
-Since a few years, there is a vision about making a suite that make knowledge management a breeze and intuitive, not too attached to the traditional form of information management.
+Since a few years ago, there is a vision about making a suite that make knowledge management a breeze and intuitive, not too attached to the traditional form of information management.
 Especially easier and faster in condition of immersive user experience.
 In condition of software architectural design, it should be modular and can be integrated to other system.
 Because in the end, it should be more helpful and make the users happy, not for creator's benefit only.
@@ -61,18 +61,29 @@ Satellid is like knowledge, information, or note taking apps, sites, or methods 
 But more than that, we combine the best essentials of those worlds together in a better, simpler, and faster way.
 For now, we focus on strengthen the idea of being the best knowledge organizer we need and use everytime.
 But of course, we still would offer more features and benefits in the long run even after this thesis is finished.
+If Satellid is compared against its most similar tools in terms of storing information and knowledge, \autoref{table:comparison} can summarize the difference.
 
-So Satellid is one of the implementation that is both system and application which fulfill these principles by design:
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c||c|c|c|c|c| }
+\hline
+Type         & Satellid   & Evernote      & Google Keep & Wikipedia    & Silk \\ \hline
+\hline
+Focus        & Knowledge  & Notes         & Notes       & Encyclopedia & Data \\ \hline
+\shortstack{Data\\Format} & JSON       & ENML          & JSON        & XML/Wiki     & JSON \\ \hline
+Vision       & Ubiquitous & \shortstack{Business\\Work} & Casual Use  & \shortstack{Public,\\Academic} & Visualization \\
+\hline
+\end{tabular}
+\caption{Knowledge-related tools comparison}
+\label{table:comparison}
+\end{table}
 
-\begin{description}
-\item [Open]: Always available and tweakable
-\item [Rapid]: Fast and effective to use
-\item [Micro]: Small scale of memory and usage
-\item [Linked]: Each date are interconnected
-\item [Modular]: Self pluggable and extending features
-\item [Structured]: Organized content format with certain neat rules
-\item [Transcluded]: Other knowledge can be inserted to existing knowledge
-\item [Decentralized]: Distributed to networks and not locked into system
-\item [Template based]: Quickly design and form the context of knowledge
-\item [Knowledge oriented]: Establish a collection that could be benefit a lot
-\end{description}
+The type defines characteristic of each tools: focus is the primary substance usage of it, data format is the primary system to store and exchange data inside or outside the software, and vision is both the initial and real use case.
+As an important note, the initial version of Satellid may not be complete as the others currently have.
+For now we still only processes text data as the main features.
+
+Satellid was planned to be a cross platform app, but now currently only focus in the form of a web app.
+To make it possible, we need the software to able to be run on both server and client.
+The server side is the main logic and computation implementation as a system.
+While the client side that could be a web browser also other web enabled device like smartphone, functions as the main user interface and interaction with the system that is run on the server.
+How a web app works, with the connection of client and server is established, is later described in \autoref{sec:webapp}.

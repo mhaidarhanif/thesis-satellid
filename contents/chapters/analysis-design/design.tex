@@ -21,28 +21,88 @@ So we chose employees and colleagues in a startup work environment to be the ini
 Because we know what we design for, we can effectively start our design.
 
 % --------------------------------------------------
+\subsection{Application Architecture}
+
+...
+
+\autoref{fig:satellid-arch-app}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{\dir/include/satellid-arch-app.png}
+    \caption[Satellid Application Architecture]{The architecture of Satellid application}
+    \label{fig:satellid-arch-app}
+\end{figure}
+
+% --------------------------------------------------
 \subsection{System and Process}
 
 In the product segment, it is by shortening the steps that needed to do a knowledge management, with making it more effective and accessible. Satellid uses an major role of features called ``Contextual'' and ``Superbar''.
 
 \begin{figure}[htb]
     \centering
-    % \includegraphics[width=\textwidth]{\dir/include/data-template}
+    % \includegraphics[width=\textwidth]{\dir/include/contextual}
     \caption{Contextual visual representation}
-    \label{fig:background:data-template}
+    \label{fig:background:contextual}
 \end{figure}
 
 Contextual utilize data and template that are used together to form the context and structure.
-With this, user will eventually always structure their data. In addition to this, category and taggin could also be built. At the later time, it can be easily sorted faster than just using category or tags.
+With this, user will eventually always structure their data, and even create more or modify available data field.
+In addition to this, category and tagging could also be built.
+At the later time, it can be easily sorted faster than just using category or tags.
+The difference of context with category or tag is how it handles specificity.
+Context is very specific as a descriptor so it can be fully understood and assessed easily, rather than category or tag that is more widely and freely determined.
+For example, \textit{The Merriam-Webster Dictionary} may be categorized as a ``dictionary'', ``book'', ``reference'', ``glossary'', ``thesaurus'' and tagged as ``word'', ``language'', ``english'', ``''; but it is basically just a ``publication''.
+So it can be in the same context like \text{JavaScript, The Definitive Guide} or even \text{Iron Man comic}.
+Contextual provide some of the most common type of knowledge with its key attributes.
+As a sample, the lists below are the sorted version of prospected key attributes that can be used.
+Each of them can have a label if appropriate.
+
+\begin{easylist}
+& Basic
+  && ID
+  && Context
+  && Date
+     &&& Created
+     &&& Updated
+  && Time
+  && Location
+  && Content/Text
+& Person
+  && Name
+  && Location
+  && Phone
+  && Email
+& Organization
+  && Name
+  && Type
+  && Industry
+  && Founded
+& Product
+  && Name
+  && Type
+  && Tagline
+  && Description
+& Publication
+  && Name
+  && Author
+  && Description
+& Event
+  && Title
+  && Type
+  && Location
+  && Date
+  && Presenter
+\end{easylist}
+
+Superbar enable \ac{CRUD} and search operation simultaneously within the same interaction interface box (the space or the bar).
 
 \begin{figure}[htb]
     \centering
-    % \includegraphics[width=\textwidth]{\dir/include/add-search}
+    % \includegraphics[width=\textwidth]{\dir/include/superbar}
     \caption{Superbar interface}
-    \label{fig:background:add-search}
+    \label{fig:background:superbar}
 \end{figure}
-
-Superbar enable \ac{CRUD} and search operation simultaneously within the same interaction interface space/bar.
 
 % --------------------------------------------------
 \subsection{User Interface and Interaction}

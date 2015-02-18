@@ -51,6 +51,7 @@
 \exhyphenpenalty=1000
 %\input glyphtounicode
 %\pdfgentounicode=1
+\usepackage{icomma}
 
 % Math packages
 \usepackage{amsthm}
@@ -224,9 +225,53 @@ urlseen = {Retrieved}
 \usepackage{pifont}
 \newcommand*\itar{\item[\ding{228}]}
 
-% New colors
+% Colors
+% \usepackage[usenames,dvipsnames]{color}
 \definecolor{Cerulean}{cmyk}{1, 0.26, 0, 0.35}
 \definecolor{CeruleanBlue}{cmyk}{0.87, 0.74, 0, 0}
 \definecolor{CeruleanDark}{cmyk}{0.94, 0.45, 0, 0.51}
 \definecolor{CeruleanBright}{cmyk}{0.86, 0.20, 0, 0.16}
 \definecolor{RoyalPurple}{rgb}{0.47, 0.32, 0.66}
+\definecolor{DarkGreen}{rgb}{0.0,0.4,0.0} % Comment color
+\definecolor{highlight}{RGB}{255,251,204} % Code highlight color
+
+% Code listing
+
+\usepackage{listings}
+\usepackage{minted}
+\usemintedstyle{manni}
+\surroundwithmdframed{minted}
+
+\renewcommand{\listingscaption}{Listing}
+\renewcommand{\listoflistingscaption}{List of Listings}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={break, case, catch, continue, debugger, default, delete, do, else, false, finally, for, function, if, in, instanceof, new, null, return, switch, this, throw, true, try, typeof, var, void, while, with},
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]",
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  keywordstyle=\color{CeruleanBlue}\bfseries,
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{RoyalPurple},
+  commentstyle=\color{green}\ttfamily,
+  stringstyle=\color{DarkGreen}\ttfamily,
+  sensitive=true
+}
+\lstset{
+   language=JavaScript,
+   frame=single,
+   backgroundcolor=\color{white},
+   extendedchars=true,
+   basicstyle=\small\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   %numbers=left,
+   %numberstyle=\footnotesize,
+   %numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}

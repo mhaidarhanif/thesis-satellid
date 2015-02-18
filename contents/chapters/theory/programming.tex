@@ -1,0 +1,36 @@
+\section{Programming Language}
+\label{sec:programming}
+
+To build a software, we need a programming language.
+The programming language of choice is JavaScript with its data interchange format called JSON.
+
+% --------------------------------------------------
+\subsection{JavaScript}
+
+\ac{JS}\index{JavaScript} is the programming language of the Web, a high-level, dynamic, untyped interpreted programming language that is well-suited to object-oriented and functional programming styles.
+~\autocite{Flanagan:2011:JS}
+Based on its specification, JavaScript implementation conforms to the ECMAScript\textsuperscript{\textregistered} scripting language standard.
+ECMAScript itself is an object-oriented programming language for performing computations and manipulating computational objects within a host environment.~\autocite{ECMA:2011:ECMAScript}
+On the Web, JavaScript is the companion programming language to \ac{HTML} the content language of \ac{DOM} and \ac{CSS} the presentation language.
+Listing \autoref{lst:js-sample} shows an example of a hello world program in JavaScript.
+
+\begin{listing}[ht]
+\caption{JavaScript code sample}
+\inputminted{javascript}{\dir/include/js-sample.js}
+\label{lst:js-sample}
+\end{listing}
+
+% --------------------------------------------------
+\subsection{JSON}
+
+\ac{JSON}\index{JavaScript Object Notation} based on its specification, is a lightweight, text-based, language-independent data interchange format.
+\ac{JSON} was inspired and derived by the object literals of JavaScript aka ECMAScript programming language, but is programming language independent.
+\ac{JSON} defines a small set of structuring rules for the portable representation of structured data,~\autocite{ECMA:2013:JSON}
+It is the most common alternative of text format, such as \ac{XML} or \ac{YAML}, that is both machine and human-readable but also really flexible to program.
+Listing \autoref{lst:json-sample} shows an example of a simple object in \ac{JSON}.
+
+\begin{listing}[ht]
+\caption{JSON code sample}
+\inputminted{javascript}{\dir/include/json-sample.json}
+\label{lst:json-sample}
+\end{listing}

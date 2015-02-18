@@ -1,13 +1,16 @@
 \section{Document Database}
 \label{sec:document-database}
 
-Because we're using a \ac{NoSQL} database technology, we need to choose at least one of the main database that will be used. We chose database document because it is the most fit for storing our knowledge. It is also very easy to be understanded by human and computer since the common format is \ac{JSON}, a de facto way to describe object in JavaScript. For now the most related \ac{NoSQL} with document-oriented database are MongoDB and CouchDB.
+Because we're using a \ac{NoSQL} database technology, we need to choose at least one of the main database that will be used.
+We chose database document because it is the most fit for storing our knowledge.
+For now the most related \ac{NoSQL} with document-oriented database are MongoDB and CouchDB.
 
 % --------------------------------------------------
 \subsection{MongoDB}
 
-MongoDB\index{MongoDB} (can also be called just Mongo\index{Mongo|see{MongoDB}}), created by MongoDB, Inc. (previously named 10gen), is one of the leading document database used today.
-Mongo is a \ac{JSON}\index{JSON} document database (though technically data is stored in a binary form or representation of JSON known as BSON). A Mongo document can be likened to a relational table row without a schema, whose values can nest to an arbitrary depth.~\autocite{Redmond:2012:DB:MongoDB}
+MongoDB\index{MongoDB} (can also be called just Mongo\index{Mongo|see{MongoDB}}), created by MongoDB Inc. (previously named 10gen), is one of the leading document database used today.
+Mongo is a \ac{JSON}\index{JSON} document database (though technically data is stored in a binary form or representation of JSON known as BSON).
+A Mongo document can be likened to a relational table row without a schema, whose values can nest to an arbitrary depth.~\autocite{Redmond:2012:DB:MongoDB}
 
 In Mongo, there are some simple concepts that used:
 
@@ -28,5 +31,5 @@ Finally, when we get data from MongoDB we do so through a cursor whose actual ex
 % --------------------------------------------------
 \subsection{CouchDB}
 
-Other alternative available for NoSQL is CouchDB\index{CouchDB}, created by The Apache Software Foundation, a relaxing and very flexible document database built of the web that mostly used for storage system.
+Other alternative available for \ac{NoSQL} is CouchDB\index{CouchDB}, created by The Apache Software Foundation, a relaxing and very flexible document database built of the web that mostly used for storage system.
 We actually planned to use it as the main database, but regarding to the framework of choice (later will be discussed), only MongoDB that can be used for now.

@@ -1,0 +1,41 @@
+\section{Platform}
+\label{sec:platform}
+
+To enable our software operated on the server side, we need a platform based on our technology of choice.
+Since we only chose JavaScript, there is Node.js, a JavaScript platform that is capable running on the server instead of just in browser.
+There is also a counterpart platform of Node.js called io.js which is more quickly updated and developed by the community because of its governance model.
+
+% --------------------------------------------------
+\subsection{Node.js}
+
+Node.js\textsuperscript{\textregistered} (sometimes only called Node) is
+a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
+Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.~\autocite{Joyent:2015:Node}
+Node.js was originally created by Ryan Dahl.
+In a simple term, Node.js is a JavaScript on the server side, but it can be run as a multiplatform within the Node.js runtime on various operating systems.
+For now, Node Joyent its development progress is sponsored and regulated by Joyent Inc., a software company that specializes in application virtualization and cloud computing.
+Node has its own package manager called \ac{npm}\index{node package manager} that comes bundled with Node.js.~\autocite{Vincent:2014:npm}
+By the time of this writing, Node has been released up to version \verb|0.12.0|.
+Listing \autoref{lst:node-sample} shows an example of a hello world program within a simple web server in Node.js.
+It can be run by executing it from the command line (assuming Node.js has already installed) like in listing \autoref{lst:node-run} then open a browser session correspond to the \ac{URL}.
+
+\begin{listing}[ht]
+\caption{Node.js code sample}
+\inputminted{javascript}{\dir/include/node-sample.js}
+\label{lst:node-sample}
+\end{listing}
+
+\begin{listing}[ht]
+\caption{Running Node.js code}
+\inputminted{shell-session}{\dir/include/node-run.shell-session}
+\label{lst:node-run}
+\end{listing}
+
+% --------------------------------------------------
+\subsection{io.js}
+
+io.js a JavaScript platform that is a fork and originally based on Node.js, but it is also compatible with the \ac{npm} ecosystem.
+The main difference is it has more predictable release cycles and using the latest update of language, API, and performance improvements.~\autocite{iojs:2015}
+io.js is created because some of the communities want a difference governance (an open governance model as opposed to corporate stewardship) direction aside from current Node.js condition.
+Its development speed is very much different with Node.js, io.js (initally a fork of node version \verb|0.12|) has been released up to version \verb|1.2.0| by the time of this writing.
+But for the context of the development of the software, we still stick to Node.js.

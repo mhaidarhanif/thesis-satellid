@@ -1,0 +1,8 @@
+{
+  "_id": 123,
+  "name": {
+    "first": "M Haidar",
+    "last": "Hanif"
+  },
+  "occupation": ["Student", "Engineer"]
+}
