@@ -50,7 +50,7 @@ Hence, \ac{KM} can be performed without the help of a computer, with just manual
     \label{fig:kms:dimensions}
 \end{figure}
 
-As knowledge management is essentially about getting the right knowledge to the right person at the right time~\autocite{Frost2010KM}, there are various factors around \ac{KM} that must be noted like in figure \autoref{fig:kms:dimensions}:
+As knowledge management is essentially about getting the right knowledge to the right person at the right time~\autocite{Frost2010KM}, there are various factors around \ac{KM} that must be noted like in \autoref{fig:kms:dimensions}:
 
 \begin{description}
   \item [KM Strategy]: The objective to take care of knowledge assets
@@ -64,7 +64,9 @@ As knowledge management is essentially about getting the right knowledge to the 
 % --------------------------------------------------
 \subsection{Knowledge Management System}
 
-Knowledge Management System\index{knowledge management system} (\ac{KMS}), is a method for the improvement of business process performance. It is most often used in business in applications such as information systems, business administration, computer science, public policy, and general management. Common company departments for knowledge management systems include human resources, business strategy, and information technology. ~\autocite{BD2015KMS}
+Knowledge Management System\index{knowledge management system} (\ac{KMS}) that also can be called knowledge manager, is a method for the improvement of business process performance.
+It is most often used in business in applications such as information systems, business administration, computer science, public policy, and general management.
+Common company departments for knowledge management systems include human resources, business strategy, and information technology.~\autocite{BD2015KMS}
 In short, \ac{KMS}s are tools aimed at supporting knowledge management.~\autocite{Dalkir2005KM}
 Nowadays \ac{KMS} can be handled with a great deal of computer system, network, and people together.
 
@@ -85,6 +87,27 @@ So it is the thing of storing and managing these kinds of knowledge in a decent 
 & Condition of access to information
 & Potential to influence action
 \end{easylist}
+
+Related to our solution, if Satellid is compared against its most similar or popular tools in terms of storing data, information, and knowledge, \autoref{table:kms-comparison} can summarize the difference. Note that not every tools mentioned are genuinely made to be a knowledge manager, but users could decide them inderectly from an encyclopedia, note taking app, or data platform, to be a knowledge manager.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c||c|c|c|c|c| }
+\hline
+Type         & Satellid   & Evernote      & Google Keep & Wikipedia    & Silk \\ \hline
+\hline
+Focus        & Knowledge  & Notes         & Notes       & Encyclopedia & Data \\ \hline
+\shortstack{Data\\Format} & JSON       & ENML          & JSON        & XML/Wiki     & JSON \\ \hline
+Vision       & Ubiquitous & \shortstack{Business\\Work} & Casual Use  & \shortstack{Public,\\Academic} & Visualization \\
+\hline
+\end{tabular}
+\caption{KMS-related tools comparison}
+\label{table:kms-comparison}
+\end{table}
+
+The type defines characteristic of each tools: focus is the primary substance usage of it, data format is the primary system to store and exchange data inside or outside the software, and vision is both the initial and real use case.
+As an important note, the initial version of Satellid may not be complete as the others currently have.
+For now we still only processes text data as the main features.
 
 % --------------------------------------------------
 \subsection{Micro {KMS}}

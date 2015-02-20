@@ -1,7 +1,7 @@
-M Haidar Hanif's Thesis
-=======================
+Thesis about Satellid Knowledge Manager
+=======================================
 
-Thesis about Satellid the Knowledge Manager.
+Author: M Haidar Hanif
 
 Structure
 ---------

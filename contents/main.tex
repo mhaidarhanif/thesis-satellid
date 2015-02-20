@@ -49,9 +49,9 @@
 \clearpage
 \input{\dir/foreword.tex}
 \clearpage
-\input{\dir/preface.tex}
-\clearpage
 \input{\dir/acknowledgements.tex}
+\clearpage
+\input{\dir/preface.tex}
 \clearpage
 \input{\dir/abstract.tex}
 \cleardoublepage
@@ -83,20 +83,23 @@
 \def\dir{chapters/intro}
 \input{\dir/introduction.tex}
 \input{\dir/background.tex}
+\input{\dir/objectives.tex}
+\input{\dir/problem-definition.tex}
+\input{\dir/problem-scope.tex}
 \input{\dir/research-method.tex}
 %\input{\dir/research-schedule.tex}
 %\input{\dir/research-source.tex}
-%\input{\dir/problem-definition.tex}
-\input{\dir/problem-scope.tex}
 \input{\dir/writing-structure.tex}
 \cleardoublepage
 
 % --------------------------------------------------
 % Concept | Theory
 % --------------------------------------------------
-\def\dir{chapters/theory}
-\input{\dir/theory.tex}
+\def\dir{chapters/literature-study}
+\input{\dir/literature-study.tex}
 \input{\dir/kms.tex}
+\input{\dir/sdlc.tex}
+\input{\dir/design-pattern.tex}
 \input{\dir/database.tex}
 \input{\dir/documentdb.tex}
 \input{\dir/programming.tex}
@@ -116,11 +119,12 @@
 \cleardoublepage
 
 % --------------------------------------------------
-% Implementation
+% Implementation & Testing
 % --------------------------------------------------
-\def\dir{chapters/implementation}
-\input{\dir/implementation.tex}
+\def\dir{chapters/implementation-testing}
+\input{\dir/implementation-testing.tex}
 \input{\dir/development.tex}
+\input{\dir/testing.tex}
 \cleardoublepage
 
 % --------------------------------------------------
@@ -130,6 +134,7 @@
 \input{\dir/closing.tex}
 \input{\dir/conclusion.tex}
 \input{\dir/suggestion.tex}
+\input{\dir/future-work.tex}
 \cleardoublepage
 
 % ==================================================
