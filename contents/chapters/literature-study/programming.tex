@@ -12,7 +12,7 @@ The programming language of choice is JavaScript with its data interchange forma
 Based on its specification, JavaScript implementation conforms to the ECMAScript\textsuperscript{\textregistered} scripting language standard.
 ECMAScript itself is an object-oriented programming language for performing computations and manipulating computational objects within a host environment.~\autocite{ECMA:2011:ECMAScript}
 On the Web, JavaScript is the companion programming language to \ac{HTML} the content language of \ac{DOM} and \ac{CSS} the presentation language.
-Listing \autoref{lst:js-sample} shows an example of a hello world program in JavaScript.
+Listing \autoref{lst:js-sample} shows an example of a simple hello world program in JavaScript.
 
 \begin{listing}[ht]
 \caption{JavaScript code sample}
@@ -20,15 +20,29 @@ Listing \autoref{lst:js-sample} shows an example of a hello world program in Jav
 \label{lst:js-sample}
 \end{listing}
 
-%TODO More details
+JavaScript itself in a web page can be declared as inline, embedded, or external program with the \ac{HTML} document.
+The main logic functions of it can be \ac{HTML} modificator, client-server communicator, and data storate.
+JavaScript has many basic features of a programming language such as data types, variables, operators, function definition with parameters and scopes, data structures with object and array, and many others.
+
+Another relative to JavaScript is CoffeeScript, which takes JavaScript in a simpler syntax with whitespace indentation approach rather than using brackets and semicolons.
+So there's less code to write, which make it very succints, as shown in listing \autoref{lst:coffee-sample}.
+CoffeeScript is a preprocessor that compiles into JavaScript, thus it doesn't replace JavaScript.
+But it also has some exciting features like aliases, classes, comprehensions, chained comparisons, parallel assignments, and more.
+
+\begin{listing}[ht]
+\caption{CoffeeScript code sample}
+\inputminted{javascript}{\dir/include/coffee-sample.coffee}
+\label{lst:coffee-sample}
+\end{listing}
 
 % --------------------------------------------------
 \subsection{JSON}
 
 \ac{JSON}\index{JavaScript Object Notation} based on its specification, is a lightweight, text-based, language-independent data interchange format.
 \ac{JSON} was inspired and derived by the object literals of JavaScript aka ECMAScript programming language, but is programming language independent.
-\ac{JSON} defines a small set of structuring rules for the portable representation of structured data,~\autocite{ECMA:2013:JSON}
+\ac{JSON} defines a small set of structuring rules for the portable representation of structured data.~\autocite{ECMA:2013:JSON}
 It is the most common alternative of text format, such as \ac{XML} or \ac{YAML}, that is both machine and human-readable but also really flexible to program.
+In \ac{JSON}, there are some some forms of data types such as object, array, just value, string, and number.
 Listing \autoref{lst:json-sample} shows an example of a simple object in \ac{JSON}.
 
 \begin{listing}[ht]
@@ -36,3 +50,6 @@ Listing \autoref{lst:json-sample} shows an example of a simple object in \ac{JSO
 \inputminted{javascript}{\dir/include/json-sample.json}
 \label{lst:json-sample}
 \end{listing}
+
+JSON has been already implemented in various languages and libraries.
+JSON itself has many derivatives such as \ac{EJSON}, \ac{BSON}, \ac{JSON-LD}, and other implementations.

@@ -1,8 +1,10 @@
 {
   "_id": 123,
   "name": {
-    "first": "M Haidar",
-    "last": "Hanif"
+    "first": "Alpha",
+    "last": "Beta"
   },
-  "occupation": ["Student", "Engineer"]
+  "occupation": ["Developer", "Engineer"],
+  "age": 20
 }
+

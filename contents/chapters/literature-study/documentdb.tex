@@ -1,12 +1,12 @@
 \section{Document Database}
 \label{sec:document-database}
 
-Because we're using a \ac{NoSQL} database technology, we need to choose at least one of the main database that will be used.
-We chose database document because it is the most fit for storing our knowledge.
-For now the most related \ac{NoSQL} with document-oriented database are MongoDB and CouchDB.
+Because we're using a \ac{NoSQL} database technology that specifically is a document database, we need to choose at least one of the main database that will be used.
+Some of the popular document databases \ac{NoSQL} with document-oriented database are MongoDB and CouchDB.
 
 % --------------------------------------------------
 \subsection{MongoDB}
+\label{ssec:mongodb}
 
 MongoDB\index{MongoDB} (can also be called just Mongo\index{Mongo|see{MongoDB}}), created by MongoDB Inc. (previously named 10gen), is one of the leading document database used today.
 Mongo is a \ac{JSON}\index{JSON} document database (though technically data is stored in a binary form or representation of JSON known as BSON).
@@ -27,13 +27,30 @@ To summarize, MongoDB is made up of databases which contain collections.
 A collection is made up of documents. Each document is made up of fields.
 Collections can be indexed, which improves lookup and sorting performance.
 Finally, when we get data from MongoDB we do so through a cursor whose actual execution is delayed until necessary.~\autocite{Seguin2010MongoDB}
+Listing \autoref{lst:mongo-sample} is an example of how data in Mongo looks, represented in \ac{JSON}.
 
 %code and data example
+\begin{listing}[ht]
+\caption{MongoDB data code sample}
+\inputminted{javascript}{\dir/include/mongo-sample.json}
+\label{lst:mongo-sample}
+\end{listing}
 
-%advantages over others
+MongoDB has many advantages over others because of its:
+
+\begin{easylist}
+& Agile Capability
+& Flexible Data Model
+& MongoDB's document data model makes it easy for you to store data of any structure and dynamically modify the schema.
+& High Scalability
+& High Performance
+& Expressive Query Language
+& Fastest-Growing Community
+\end{easylist}
 
 % --------------------------------------------------
 \subsection{CouchDB}
+\label{ssec:couchdb}
 
 Other alternative available for \ac{NoSQL} is CouchDB\index{CouchDB}, created by The Apache Software Foundation, a relaxing and very flexible document database built of the web that mostly used for storage system.
 We actually planned to use it as the main database, but regarding to the framework of choice (later will be discussed), only MongoDB that can be used for now.

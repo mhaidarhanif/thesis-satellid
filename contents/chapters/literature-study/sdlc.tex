@@ -1,27 +1,45 @@
 \section{Software Development Life Cycle}
 \label{sec:sdlc}
 
-...
+\ac{SDLC}\index{software development life cycle} is the fundamental process of software development that involves series of steps or phases, ensures the software completion.
+Essentially speaking, it is a series of steps that provide a model for a or collection of software development and its lifecycle management.
 
-\ac{SDLC}\index{software development life cycle}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{\dir/include/sdlc.png}
+    \caption{Common SDLC Cycle}
+    \label{fig:sdlc:cycle}
+\end{figure}
 
-In more technical side, the \ac{SDLC} of this software follows or tends to assist a software development principle called \ac{DRY}\index{don't repeat yourself},
-which every piece of knowledge must have a single, unambiguous, authoritative representation within a system,~\autocite{Hunt1999Pragmatic}
-That means the content that potentially will be duplicated must only in a single part and be reusable.
-Therefore code then resulted in a cleaner and clearer structure.
-This applied as well as in test plans, the build system, and documentation within or outside the code.
-Also happens in the user interaction design, therefore there is a decreased amount of duplicated data that is accidentally created or not intended by users.
+As in \autoref{fig:sdlc:cycle}, commonly there are step components like requirements, analysis, design, development (coding), test, deployment, operation, evaluation, and maintenance.
+In this kind of traditional \ac{SDLC}, each step should finished its process before go into the next step.
 
 % --------------------------------------------------
 \subsection{Agile Methodologies}
 
-Agile is a time boxed, iterative approact to software delivery that builds software incrementally from the start of the project, instead of trying to deliver it all at once near the end.
+Agile is a time boxed, iterative approach to software delivery that builds software incrementally from the start of the project, instead of trying to deliver it all at once near the end.
 It works by breaking projects down into little bits of user functionality called user stories, prioritizing them, and then continuously delivering them in short two week cycles called iterations.~\autocite{Rasmusson2015Agile}
+\autoref{fig:agile-a} and \autoref{fig:agile-b} shows how agile works in the process and iteration with a simple illustration.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{\dir/include/agile-a.png}
+    \caption{Agile progress}
+    \label{fig:agile-a}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=12cm]{\dir/include/agile-b.png}
+    \caption{Agile iteration}
+    \label{fig:agile-b}
+\end{figure}
+
 Therefore, we don't risk in creating a big or even a thing that small for a long time.
-Because we iterate the result, coming back again as like a beginning.
+Because we can frequently iterate the result, coming back again as like a improved beginning.
 Essentially, we learn and relearn what we could have done in each iteration process.
 In a process matter of sense, analysis, design, development/coding, and testing are continuous activities.
-In addition, there are a lot of other aspects that required:
+In addition, there are some key points that required and make agile considered to be greatly modern:
 
 \begin{easylist}
 & Development itself is iterative
@@ -29,10 +47,22 @@ In addition, there are a lot of other aspects that required:
 & The scope variables may vary
 & Requirements can change over time
 & Working software is the primary measure of success
-& and other leaned segments to consider
+& Temporary or finished software can be done at all time
+& Team members can be independent to each other, since there are cross-functional teams
+& High cooperation can occur between technical and non-technical person
+& and other leaned segments or aspects to consider
 \end{easylist}
 
-%TODO Agile illustration
+Agile is the counterpart of traditional \ac{SDLC}, and it is not just one thing, but a group of methodologies.
+As in traditional \ac{SDLC} like waterfall approach, we cannot change easily any of its parts until it had complete its step.
+So if a change is really needed, most likely the entire project will be build from the start again.
+In agile for example, we can do fix and test at the end of each development step, depending on the corresponding step that matters.
+Simply, agile methodologies provide flexibility to make changes, allow for any modification along the progress of \ac{SDLC}.
+Hence there could be simultaneous development of different steps at the same time.
+But back again, it would depend on the team's or personal's task distribution.
+If the conditions are met, agile is more relevant to be used in real modern software development.
+
+%Agile even has a manifesto that offer how convenience agile is, called \textit{Manifesto for Agile Software Development}~\autocite{Beck2001Manifesto}:
 
 % --------------------------------------------------
 \subsection{Minimum Viable Product}
@@ -45,8 +75,8 @@ Agile methodologies also heavily corresponds with building a \ac{MVP}\index{Mini
   \item[Product] An article or substance that is created or refined for sale.
 \end{description}
 
-In conclusion, \ac{MVP} is a...
-%TODO
+Based on those elements, \ac{MVP} is a...
+%TODO definition
 
 \begin{figure}[htb]
     \centering
@@ -76,58 +106,19 @@ The thing that matters and can be used well.
 Although it expected to be a real matter, such preliminary model like a protoype, a mockup, or even a set of data can sometimes considered as an \ac{MVP}.
 
 % --------------------------------------------------
-\subsection{Business Model Canvas}
-
-Because thesis procedure has a very limited time, we can only took the limit until it is viable enough yet basically usable.
-We first only focus on the main basic features.
-Yet, the development will always be continued further as a product of startup.
-The code and supporting commpents themself will be released as an open source project.
-So with the backing help of company and endorsement of community, this could handed by a lot of people.
-
-But then, which \ac{MVP} that is most required to be used?
-Since we're creating a software product for people, there is a concern to make it viable for business too.
-We can determine that by using a business model tool called \ac{BMC}\index{Business Model Canvas}.
-Related to \ac{MVP}, \ac{BMC} includes the most important components which are Customer Segments and Value Propositions.
-Business Model Canvas is a strategic management and lean startup template for developing new or documenting existing business models.
-It is a visual chart with elements describing a firm's value proposition, infrastructure, customers, and finances.
-It assists firms in aligning their activities by illustrating potential trade-offs.
-% TODO
-
-So with the Business Model Canvas, we can map out your entire business model in one image.
-This works for startup entrepreneurs, just as well as for the most senior executives.~\autocite{Strategyzer2011BMC}
-\autoref{fig:bmc:blank} shows how the blank Business Model Canvas looks like.
-
-\begin{figure}[htbp]
-    \centering
-    %\includegraphics[width=4cm]{\dir/include/dikw-pyramid.png}
-    \caption{Business Model Canvas}
-    \label{fig:bmc:blank}
-\end{figure}
-
-For each building blocks...
-%TODO
-
-% --------------------------------------------------
-\subsection{Extreme Programming}
-
-Since
+%\subsection{Extreme Programming}
 
 %TODO illustration
 %TODO Reason
 %TODO About documentation
 
 % --------------------------------------------------
-\subsection{Scrum and Kanban}
-
-...
-Other
-
-%TODO Reason
-%TODO About documentation
-
-% --------------------------------------------------
 \subsection{Testing with NAME}
 
-Because...
+%TODO Software or Design?
+
+% The main reason
 
 %TODO Reason
+
+Black-box testing treats the software as a "black box", examining functionality without any knowledge of internal implementation. The testers are only aware of what the software is supposed to do, not how it does it.[23] Black-box testing methods include: equivalence partitioning, boundary value analysis, all-pairs testing, state transition tables, decision table testing, fuzz testing, model-based testing, use case testing, exploratory testing and specification-based testing.
