@@ -21,6 +21,17 @@ Most popular \ac{WAF} that is full stack with full JavaScript technologies or he
 \subsection{Meteor}
 \label{ssec:meteor}
 
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \vspace{-20pt}
+  \begin{center}
+    \includegraphics[width=5cm]{\dir/include/logo/meteor.png}
+  \end{center}
+  \vspace{-20pt}
+  \caption{Meteor logo}
+  \label{fig:meteor-logo}
+  \vspace{-10pt}
+\end{wrapfigure}
+
 Meteor is a complete open source platform for building web and mobile apps in pure JavaScript.~\autocite{Meteor2015}
 It also can be said that Meteor is a full stack framework that currently and primarily using JavaScript and Node.js as its base platform.
 More so than any other framework, Meteor makes it possible to get a real-time web app up and running on the web in a matter of hours.~\autocite{Coleman2014Meteor}.
@@ -34,25 +45,26 @@ The main components of Meteor which must be required are:
 
 \begin{dinglist}{220}
 \item JavaScript platform: Node.js
+\item Data format: \ac{JSON}
 \item NoSQL database: MongoDB
-\item Reactive protocol: \ac{DDP} with \ac{JSON}
+\item Reactive protocol: \ac{DDP}
 \item Templating engine: Blaze with Spacebars syntax
 \end{dinglist}
 
 While the main source codes of Meteor are:
 
 \begin{dinglist}{220}
-\item View: HTML-based files
+\item View: \ac{HTML}-based files
 \item Logic: JavaScript-based files
 \item Style: \ac{CSS}-based files
-\item Meteor files: \verb|.meteor| repository including files about release version, platforms, packages list, etc
+\item Meteor files: \verb|.meteor| repository including files about platforms, packages list, release version, etc
 \end{dinglist}
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=4cm]{\dir/include/meteor-stack.png}
-    \caption[Meteor Stack]{Meteor stack of tools/technologies}
-    \label{fig:meteor-stack}
+  \centering
+  \includegraphics[width=4cm]{\dir/include/meteor-stack.png}
+  \caption[Meteor Stack]{Meteor stack of tools/technologies}
+  \label{fig:meteor-stack}
 \end{figure}
 
 Meteor in terms of application is both library of packages (pre-written and self-contained modules that needed) and command-line tools.
@@ -69,8 +81,6 @@ Since in the beginning of application development, it has a very tight coupling 
 So from there, we can do stuff faster without prior configuration over the protocol and database.
 It can be run instantly then it just works.
 
-\clearpage
-
 \noindent There are seven principles that Meteor hold:
 
 \begin{description}
@@ -83,14 +93,14 @@ It can be run instantly then it just works.
 \item [Simplicity Equals Productivity]  The main functionality has clean, classically beautiful APIs.
 \end{description}
 
-Meteor has a \ac{CLI} installer that officially supports Linux on \verb|x86| and \verb|x86_64| architectures, also Mac OS X 10.7 and above.
+Meteor has a \ac{CLI} installer that officially supports Linux on \verb|x86| and \verb|x86_64| architectures, also Mac OS X $10.7$ and above.
 How install the Meteor with one command on Linux or OS X terminal is just with:
 
 \begin{verbatim}
 curl https://install.meteor.com | sh
 \end{verbatim}
 
-Then create a basic app just like:
+\noindent Then create a basic app just like:
 
 \begin{verbatim}
 meteor create app-name
@@ -114,7 +124,7 @@ meteor
 
 By default, it runs the app via \ac{URL} \verb|http://localhost:3000| and can be run via browser.
 If there is an edit in one or some of the files, Meteor will rebuild and update the app automatically with the new code and content.
-\noindent Below listing \autoref{lst:meteor-html} and \autoref{lst:meteor-js} are the actual source code of a very basic Meteor application that built with those commands:
+\noindent Below listing \autoref{lst:meteor-html}, \autoref{lst:meteor-js}, and \autoref{lst:meteor-css} are the actual source code of a very basic Meteor application that built with those commands.
 
 \begin{listing}[!hp]
 \caption{View (HTML) part of Meteor}
@@ -123,13 +133,13 @@ If there is an edit in one or some of the files, Meteor will rebuild and update 
 \end{listing}
 
 \begin{listing}[!hp]
-\caption{Styles (CSS) part of Meteor}
-\inputminted{css}{\dir/include/meteor/meteor.css}
-\label{lst:meteor-css}
-\end{listing}
-
-\begin{listing}[!hp]
 \caption{Logic (JavaScript) part of Meteor}
 \inputminted{javascript}{\dir/include/meteor/meteor.js}
 \label{lst:meteor-js}
+\end{listing}
+
+\begin{listing}[!hp]
+\caption{Style (CSS) part of Meteor}
+\inputminted{css}{\dir/include/meteor/meteor.css}
+\label{lst:meteor-css}
 \end{listing}

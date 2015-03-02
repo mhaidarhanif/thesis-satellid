@@ -8,8 +8,19 @@ Some of the popular document databases \ac{NoSQL} with document-oriented databas
 \subsection{MongoDB}
 \label{ssec:mongodb}
 
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \vspace{-20pt}
+  \begin{center}
+    \includegraphics[width=5cm]{\dir/include/logo/mongodb.png}
+  \end{center}
+  \vspace{-20pt}
+  \caption{MongoDB logo}
+  \label{fig:mongodb-logo}
+  \vspace{0pt}
+\end{wrapfigure}
+
 MongoDB\index{MongoDB} (can also be called just Mongo\index{Mongo|see{MongoDB}}), created by MongoDB Inc. (previously named 10gen), is one of the leading document database used today.
-Mongo is a \ac{JSON}\index{JSON} document database (though technically data is stored in a binary form or representation of JSON known as BSON).
+Mongo is a \ac{JSON}\index{JSON} document database (though technically data is stored in a binary form or representation of \ac{JSON} known as \ac{BSON}).
 A Mongo document can be likened to a relational table row without a schema, whose values can nest to an arbitrary depth.~\autocite{Redmond:2012:DB:MongoDB}
 
 In Mongo, there are some simple concepts that used:
@@ -29,8 +40,7 @@ Collections can be indexed, which improves lookup and sorting performance.
 Finally, when we get data from MongoDB we do so through a cursor whose actual execution is delayed until necessary.~\autocite{Seguin2010MongoDB}
 Listing \autoref{lst:mongo-sample} is an example of how data in Mongo looks, represented in \ac{JSON}.
 
-%code and data example
-\begin{listing}[ht]
+\begin{listing}[htbp]
 \caption{MongoDB data code sample}
 \inputminted{javascript}{\dir/include/mongo-sample.json}
 \label{lst:mongo-sample}
@@ -52,5 +62,17 @@ MongoDB has many advantages over others because of its:
 \subsection{CouchDB}
 \label{ssec:couchdb}
 
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \vspace{-20pt}
+  \begin{center}
+    \includegraphics[width=2.5cm]{\dir/include/logo/couchdb.png}
+  \end{center}
+  \vspace{-20pt}
+  \caption{CouchDB logo}
+  \label{fig:couchdb-logo}
+  \vspace{-10pt}
+\end{wrapfigure}
+
 Other alternative available for \ac{NoSQL} is CouchDB\index{CouchDB}, created by The Apache Software Foundation, a relaxing and very flexible document database built of the web that mostly used for storage system.
 We actually planned to use it as the main database, but regarding to the framework of choice (later will be discussed), only MongoDB that can be used for now.
+The data content itself is not very different with MongoDB.

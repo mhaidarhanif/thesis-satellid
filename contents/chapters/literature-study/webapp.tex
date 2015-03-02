@@ -7,12 +7,19 @@ So a web application can include an application program executing at a web site 
 Example of most popular web applications used by people today are Google, Gmail, Twitter, Facebook, and YouTube.
 Within web application architecture, each application can communicate with each other, often with an \ac{API} like \ac{REST} or even a communication protocol such as WebSocket over the usual standard \ac{HTTP}.
 The communication includes the reception and publication of data that has already been processed by any of client or server application.
-How a web application usually architected is illustrated in \autoref{fig:webapp}.
+
+% --------------------------------------------------
+\subsection{General Web App Architecture}
+\label{ssec:general-webapp-arch}
+
+General web app architecture is a non specific way to design important web application parts.
+It only involves the most important parts in a web app that basically a client app for user (usually via a web browser), a server app with a database, and a protocol that connect both of them, transferring data over the network such as Internet or even a local network.
+How a general web application usually architected is illustrated in \autoref{fig:webapp}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=8cm]{\dir/include/webapp.png}
-    \caption[Web Application Architecture]{Illustration of a simple web application architecture}
+    \caption[General Web Application Architecture]{Illustration of a simple general web application architecture}
     \label{fig:webapp}
 \end{figure}
 
@@ -20,6 +27,6 @@ The application is separated into two main types, a server app and client app th
 Server app is the service dominantly processes the data and interact directly with the database.
 Various data can be transferred over a protocol (often with \ac{HTTP}) via the Internet or even a local network.
 The data then received to or sent by the client app which is the user.
-It is done by request and respond method if it is using \ac{HTTP}
+It is done by request and respond method if it is using \ac{HTTP}.
 Or, it can be publish and subscribe method if it is using protocol that has \ac{Pub/Sub} messaging pattern
 Majority of the client app are run inside a web browser although sometimes it could be a native software on the desktop or mobile \ac{OS}.

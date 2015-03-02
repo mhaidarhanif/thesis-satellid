@@ -18,6 +18,9 @@ Structure
 
 # ?
 
++ Problem scope
++ Problem statements check
+
 + TDD (Test Driven Development)
 + BDD (Behaviour Driven Development)
 
@@ -25,23 +28,16 @@ Structure
 + functional or integration testing
 + Structure the explanation
 
-
-
-
-+ Bib style?
 + Personal focus
-+ Problem scope
-+ Problem statements check
-+ Research method / development method / methodology
-+ Environment
++ Bib style?
++ Research method / development method / methodology?
 
 + Logo of brands
 + Wrap figure
 
-+ Can it be done on time
-
 Well,
 some has already in the middle of requisites
+some don't have proper SDLC
 some even don't include details on library and compilation
 some don't speficy the repo, detailed tools, and environment
 

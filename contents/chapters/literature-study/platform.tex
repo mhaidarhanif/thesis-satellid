@@ -8,6 +8,17 @@ There is also a counterpart platform of Node.js called io.js which is more quick
 % --------------------------------------------------
 \subsection{Node.js}
 
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \vspace{-20pt}
+  \begin{center}
+    \includegraphics[width=5cm]{\dir/include/logo/nodejs.png}
+  \end{center}
+  \vspace{-20pt}
+  \caption{Node.js logo}
+  \label{fig:nodejs-logo}
+  \vspace{-10pt}
+\end{wrapfigure}
+
 Node.js\textsuperscript{\textregistered} (sometimes only called Node) is
 a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
 Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.~\autocite{Joyent:2015:Node}
@@ -22,26 +33,39 @@ Listing \autoref{lst:node-sample} shows an example of a hello world program with
 It can be run by executing it from the command line (assuming Node.js has already installed) like in listing \autoref{lst:node-run} then open a browser session correspond to the \ac{URL}.
 Node.js can even be written in CoffeeScript like in listing \autoref{lst:node-coffee-sample}.
 
-\begin{listing}[ht]
+\begin{listing}[h]
 \caption{Node.js code sample}
 \inputminted{javascript}{\dir/include/node-sample.js}
 \label{lst:node-sample}
 \end{listing}
 
-\begin{listing}[ht]
+\begin{listing}[h]
 \caption{Running Node.js code}
 \inputminted{shell-session}{\dir/include/node-run.shell-session}
 \label{lst:node-run}
 \end{listing}
 
-\begin{listing}[ht]
+\begin{listing}[h]
 \caption{Node.js code sample in CoffeeScript}
 \inputminted{javascript}{\dir/include/node-sample.coffee}
 \label{lst:node-coffee-sample}
 \end{listing}
 
+\clearpage
+
 % --------------------------------------------------
 \subsection{io.js}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \vspace{-20pt}
+  \begin{center}
+    \includegraphics[width=3cm]{\dir/include/logo/iojs.png}
+  \end{center}
+  \vspace{-20pt}
+  \caption{io.js logo}
+  \label{fig:iojs-logo}
+  \vspace{-10pt}
+\end{wrapfigure}
 
 io.js a JavaScript platform that is a fork and originally based on Node.js, but it is also compatible with the \ac{npm} ecosystem.
 The main difference is it has more predictable release cycles and using the latest update of language, API, and performance improvements.~\autocite{iojs:2015}
