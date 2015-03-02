@@ -1,25 +1,76 @@
 \section{Logic}
 \label{sec:logic}
 
-The logic mainline is compiled up from the ``Key Reason'' and ``Logic Persona''.
-Key reason is the cause that make running the implementation worth attempted.
+The logic mainline is compiled up from the ``Key Reason'', ``Basic Logic'', and other ``User Types''.
 
-\subsection{Key Reason}
+% --------------------------------------------------
+\subsection{Primary Logic}
 
-The main key reason to build the implementation is to enable colleagues share their knowledge together in a single hub, without having to manually share it.
-But also, in a very simple way of interaction, so it should be very intuitive.
-%TODO
+Since the primary reason to build the implementation of Satellid is to enable knowledge management and sharing, together in a single hub without having to manually share it.
+The focus it to make exchanging knowledge between colleagues easy.
+The primary logical functionality is to enable a personal knowledge worker who frequently get knowledge or wanted to store their knowledge, without having to bother the properties arrangement because everything is managed in a predefined context.
+The application could be just deployable local network (easily also in their own computer) or accessed from the Web via Internet.
+In a very simple way of interaction, so it should be very intuitive.
+\ac{CRUD} and search operation is a must, and could be done easily.
+To keep the process faster and shorter, all of the functional process can be done in one single interface layout of the application.
+So there is no need to switch back and forth to different views of search, read, create, edit, and delete.
+It all could happen with a simplified unified interface.
 
-\subsection{Basic Logic}
+\noindent There are some terminologies used in this logic, there are:
 
-...
+\begin{description}
+\item [User]: The primary person who use Satellid
+\item [System]: The Satellid application
+\item [Database]: The databased that used by Satellid
+\item [Knowledge]: The knowledge inside database that accessed and managed with Satellid
+\item [Template]: The template to wrap the data schema
+\item [Search bar]: The input area that User can search for knowledge
+\item [Collection cards]: The output area that User can view the knowledge
+\end{description}
 
-\subsection{User Types}
+\noindent The System will do the following logics:
 
-Using Satellid approach to do knowledge management should also enable features corresponds to other user types or user stories that listed here:
+\begin{enumerate}
+\item System can be used by the User
+\item System can run the ordered interaction functionality by the User
+\item System constantly monitor modification of Knowledge in the Database
+\end{enumerate}
+
+\noindent The User interactions are defined by these logics:
+
+\begin{easylist}[enumerate]
+& User can use, turn on and turn off the System
+& User can interact with the System to:
+  && Search a stored Knowledge
+  && Add a new Knowledge
+  && Read a stored Knowledge
+  && Edit a stored Knowledge
+  && Delete a stored Knowledge
+& User can enter a text into the search bar to:
+  && Search a Knowledge based on text strings
+  && System search for matching text
+  && If matched Text is found, System deliver the search result to the User
+  && User get the found Knowledge
+& User can click/tap the add button beside the search bar to:
+  && Add a new knowledge
+  && User complete the new Knowldge
+  && If new Knowledge is successfully inputted, System store the new Knowledge into the System
+& User can click/tap the edit button beside the knowledge card to:
+  && Edit an existing knowledge
+  && User edit the Knowldge
+  && If the Knowledge is successfully edited, System store the edited Knowledge into the System
+& User can click/tap the delete button beside the knowledge card to:
+  && Delete an existing knowledge
+  && If the Knowledge is confirmed to be deleted, System delete the Knowledge from the System
+\end{easylist}
+
+% --------------------------------------------------
+\subsection{Other Cases of User Types}
+
+Using Satellid approach to do knowledge management should also consider to enable features corresponds to other cases of user types or user stories that listed here:
 
 \begin{easylist}[itemize]
-  & As a person, I don't need to manually shout a new knowledge, so others can rapidly know what's the latest info then I can continue to do my study or work.
+  & As a person, I don't need to manually shout a new knowledge, so others can know what's the latest important knowledge I have then I can continue to do my study or work.
   & As a new user, I need to quickly use and understand the workflow, so I can immediately store my knowledge.
   & As a colleague of other user, I need to quickly know what other user have know, so I can learn from them.
   & As a student, I need to store and manage and find my knowledge easily, so I can neatly organize a preparation for study, exam, or portfolio.
@@ -36,4 +87,4 @@ Using Satellid approach to do knowledge management should also enable features c
   & As a researcher, I need to be able collect various data and research information related to my current knowledge and purpose, so I can quickly connect and filter them to be used within my experiments.
 \end{easylist}
 
-Event not mentioned explicitly again within those user types, the shape of knowledge management will normally always be the same, to make sure those knowledge are easily managed and neatly organized across different people.
+Even not mentioned explicitly again within those user types, the shape of knowledge management will normally always be the same, to make sure those knowledge are easily managed and neatly organized across different people.

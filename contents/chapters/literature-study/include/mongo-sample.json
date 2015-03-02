@@ -1,16 +1,22 @@
 {
-    _id: 1234567890,
-    author: { name: "Alpha Beta", email : "alpha@example.com" },
-    date: { $date: "2015-01-01 01:23UTC" },
-    location: [ -100.200, 30.400 ],
-    age: 20,
-    jobs: [
-       { title: "Developer",
-         company: "Company X"
-         year: "2014" },
-       { title: "Engineer",
-         company: "Company Y"
-         year: "2015" }
-    ],
-    tags: [ "person", "technician" ]
- }
+  _id: 1234567890,
+  author: {
+    name: "Alpha Beta",
+    email: "alpha@example.com"
+  },
+  date: {
+    $date: "2015-01-01 01:23UTC"
+  },
+  location: [-100.200, 30.400],
+  age: 20,
+  jobs: [{
+    title: "Developer",
+    company: "Company X"
+    year: "2014"
+  }, {
+    title: "Engineer",
+    company: "Company Y"
+    year: "2015"
+  }],
+  tags: ["person", "technician"]
+}

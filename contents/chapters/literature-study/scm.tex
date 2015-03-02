@@ -20,12 +20,15 @@ The specific style of \ac{VCS} we're using is a \ac{DVCS}.
 \subsection{Git}
 
 Git is more than a \ac{VCS}, it is a \ac{DVCS} which takes a decentralized way of managing a repository.
-Like in \autoref{fig:scm:git}, we can see how Git works at a glance.
+It is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.~\autocite{Git2010}
+In \autoref{fig:scm:git}, we can see how Git stages works at a glance.
+Basically we work in the working directory, then we add the changed files into the staging area, once it has been confirmed, those changes committed into the Git repository.
+It works more effectively because the stage called ``staging area'' or ``index'' enables that commits can be reviewed before actually completing the commit~\autocite{Git2010}.
 
 \begin{figure}[htb]
     \centering
-    %\includegraphics[width=\textwidth]{\dir/include/git}
-    %\caption[Git illustrated]{Git illustrated with~\autocite{Mercury2014MVP}}
+    \includegraphics[width=6cm]{\dir/include/git-stages.png}
+    \caption{Git stages}
     \label{fig:git}
 \end{figure}
 
@@ -34,6 +37,7 @@ Like in \autoref{fig:scm:git}, we can see how Git works at a glance.
 
 In order to distribute and help a better colloaboration with Git, we use a Git hosting service called GitHub.
 GitHub is a web-based service for Git repositories that offers \ac{DVCS} and \ac{SCM} features, also combined with various useful features like issue tracking and code review.
+As they declared, GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers~\autocite{GitHub2015}.
 It is one of the most used collaboration tool for a lot of developers and projects.
 Many open-source projects are using it and hosted in it.
 Other alternatives available that presented as a web service are BitBucket, Assembla, and Kiln.

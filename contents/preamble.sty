@@ -38,7 +38,7 @@
 \newcommand{\myDatePrint}{March 2015}
 \newcommand{\myDateSession}{0 March 2015}
 \newcommand{\myDatePassing}{0 March 2015}
-\newcommand{\myVersion}{1.0.0}
+\newcommand{\myVersion}{1.0}
 
 % paging
 \usepackage{mdframed}
@@ -123,6 +123,7 @@ vmargin=2.5cm, % top and bottom margins
 \usepackage{subcaption}
 \expandafter\def\csname ver@subfig.sty\endcsname{}
 \usepackage{svg}
+\usepackage{adjustbox}
 
 \tikzset{%
   fancy quotes/.style={
@@ -203,7 +204,7 @@ vmargin=2.5cm, % top and bottom margins
 % bibliography
 \usepackage{csquotes}
 \usepackage[%
-    style=authoryear,%
+    style=authoryear-icomp,%
     dashed=false,%
     doi=true,%
     isbn=false,%

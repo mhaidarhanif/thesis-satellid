@@ -356,8 +356,8 @@
     \lehead{\mbox{\llap{\small\thepage\kern2em}\headmark\hfil}}
     \rohead{\mbox{\hfil{\headmark}\rlap{\small\kern2em\thepage}}}
     \renewcommand{\headfont}{\small}
-%    \DeclareRobustCommand{\fixBothHeadlines}[2]{} % <--- TODO
-    % hack to get the content headlines right (thanks, Lorenzo!)
+    % \DeclareRobustCommand{\fixBothHeadlines}[2]{}
+    % hack to get the content headlines right
 		\def\toc@heading{%
 	 		\ifthenelse{\boolean{@nochapters}}%
 	 		{\section*{\contentsname}}%nochapters

@@ -2,11 +2,13 @@
 \label{sec:background}
 
 There are a lot of cases on why we're choosing to build a new solution in the form of a simpler knowledge manager or commonly defined as a \ac{KMS}\index{knowledge management system}.
+This also classified as a knowledge storage in process of knowledge management.
 Briefly, based by need and intend to create a new knowledge manager that allows us to have a better and more organized knowledge.
 
 Since a few years ago, there is a vision about making a suite that make knowledge management a breeze and intuitive, not too attached to the traditional form of information management.
 Especially easier and faster in condition of immersive user experience but still simple to use.
-In condition of software architectural design, it should be modular and can be integrated to other system.
+In condition of software architectural design, it should be simple to build and delay.
+Later in the future, it should be modular and can be integrated to other system.
 Because in the end, it should be more helpful and make the users happy, not for creator's benefit only.
 Finally impactful enough to make the life of us better.
 
@@ -17,12 +19,13 @@ We can be stuck and too much dependent on it, whereas deep down essentially thos
 Even though those kind of online tools can be integrated, but those data of ours are still kind of locked in a fixed circle.
 Even worse, they're mosly bloated footprint in their file formats.
 Because at first they're designed as a free form database, so users can do whatever with it as unstructured system.
-Despite of that, they're still the most usable tools and system because they're currently have the most needed features.
-Most of the solutions offered today still have inherent styles of traditional analog notes.
+The result is more often to be very cluttered, because there is no structure frame.
+Despite of that, they're still the most usable tools and system because they're currently have the most needed features for people.
+Meanwhile most of the solutions offered today still have inherent styles of traditional analog notes.
 That means note taking applications just digitalize the basic nature of real world notes and books, while making it faster and organized in one place.
 
 Knowledge management itself is sometimes ironically difficult to understand and even misunderstood in most of the society.
-Kind of viewed that information with note taking apps are enough to be a knowledge manager.
+Kind of viewed that information with note taking apps are sometimes enough to be a knowledge manager.
 While actually it can be understand with the process that beyond of information taking.
 Unlike information taking that too specific and few time use (only the what, when, where), knowledge management is more into understanding and collective notion that can be used everytime (the what, why, and how).
 Most of the apps or systems are only storing and managing temporary information and designed for specific needs, so often you may forgot it and need different tools.
@@ -44,6 +47,9 @@ In another case, people take analog notes of knowledge but text notes that only 
 There are digital systems and services, but majority of them remain usable just when online only and stuck within proprietary system.
 Also their kinds are usually too specific, leading to more apps needed to do something that is related but outside the functionality.
 In more specific case that is clearly available is the contribution flow in encyclopedia-like site (Wiki such as Wikipedia) is too ridiculously confusing to be understand for most people, make it hard to actually or have desire to contribute.
+Actually, CrunchBase provide a suitable one, but it's more focus towards startup activity, business oriented matters, and some data entry must be inputted if it is exist in their database before.
+Silk is more focus towards data exploration, visualization, and analysis; within a lot of separated sets based on their .
+But they both don't have seamless editing experience and only available when online so sometimes they're slow in response time.
 
 Set out from these problems, we proposed a solution.
 The solution was actually formulated and born from both joy of organizing knowdlege beyond just scattered data and information, also because frustation of existing tools.
@@ -52,14 +58,32 @@ Then a system that also care about computational performance in time-based and r
 
 As mentioned earlier, the system is proposedly named Satellid (pronounced sat-el-eed). It's a play word from satellite, because satellite can send and receive information, but moreover can be knowledge.
 Satellid is a satellite for identified knowledge data or documents.
-Satellid is like knowledge, information, or note taking apps, sites, or methods such as pen \& paper, Google Docs, Evernote, WorkFlowy, Wikipedia, Silk, just plain text, and others.
+Satellid is like knowledge, information, or note taking apps, sites, or methods such as pen \& paper, Google Docs, Evernote, WorkFlowy, Wikipedia, CrunchBase, Silk, just plain text, and others.
 But more than that, we combine the best essentials of those worlds together in a better, simpler, and faster way.
 For now, we focus on strengthen the idea of being the best knowledge organizer we need and use everytime.
 But of course, we still would offer more features and benefits in the long run even after this thesis is finished.
 It works together with users in terms of collective knowledge, so users can retrieve knowledge and connect them together with other people naturally.
-To be more specific and focalize the initial execution, we first only tend to make it work for a startup work environment, where almost every aspect of tools and features are small with a narrow scope but can be usable and run nicely.
+To be more specific and focalize the initial execution, we first only tend to make it work for a personal needs, where almost every aspect of tools and features are small with a narrow scope but can be usable and run nicely.
 So to fit it right, only features that will be actually used that could be implemented first, that is, \ac{CRUD} and search operation.
-More upcoming features are in the roadmap, but for now only limited to those features.
+More upcoming features can be considered, but for now only limited to those features.
+Related to what must be known by colleagues are knowledge like about their own assets and conditions, inside and outside organizations, internal and related people, listed or historical events, catalogue of products (such as software or gadgets).
+Although it seems vary, but all of them can be generalized as data in knowledge documents.
+Knowledge documents include such data like:
+
+\begin{easylist}
+& id of the data
+& name or title of the person, product, company, or event
+& description or tagline of them
+& owner and creator of the product
+& date and time as in birth date, launch date, or occured date.
+& location in descriptive location or coordinates
+& Phone and website URL of them
+& Classification meta data like labels, categories, or tags
+& Other meta data like license,
+& Even random data that not yet known
+\end{easylist}
+
+And all of those data, can be customized based on the contents that needed.
 
 Satellid was planned to be a cross platform app, but now currently only focus in the form of a web app.
 To make it possible, we need the software to able to be run on both server and client.
