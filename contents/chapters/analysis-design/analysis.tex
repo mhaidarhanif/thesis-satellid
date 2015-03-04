@@ -1,0 +1,68 @@
+\section{Analysis}
+\label{sec:analysis}
+
+% --------------------------------------------------
+\subsection{Target User}
+
+For our target user, strategy we're using is actually kind of concise, just  describe the desired function for each users.
+%In the business related segment, it is by using what we call a \ac{BMC}\index{Business Model Canvas} to help shape the product which users would use up to customers would pay for.
+Also as concerns of a wide range of market (really specify which kind of personal), Satellid implementation is actually not impartially refer to one of between the subject is a common vertical market (generally anyone, ordinary regular users and such) or diagonal market (specific types, from professionals to large industries).
+Instead, we want to take a different approach.
+We found and chose a what we came up with, a diagonal market which anyone can be just a user and even a paying customer.
+This could cover both vertical and diagonal market within the same product.
+Diagonal product can be too risky if we don't have a focus, so we first defined and validate the more likely to be considered which seems only be the users and customers.
+The general ones are individuals and variety of teams.
+The specific ones are students, educators, teachers, managers, creatives, developers, designers, entrepreneurs, software and information architect, strategy consultants, research analysts, organization managers, data analysts, \ac{CIO} and \ac{CTO} also even \ac{CEO}.
+The culmination of this product is a general purpose type of tool that benefits both side of the worlds.
+But as explained in \autoref{sec:problem-scope}, we can't design for everyone in the beginning.
+So we chose only for general personal use who frequently gather and need to manage their knowledge at almost everytime.
+Because we know what we design for, we can effectively start our design.
+So it back again to the general and specific ones who do that kind of particular activity in everyday life.
+% [?] more words
+
+% --------------------------------------------------
+\subsection{Cases of User Types}
+
+To be more specific who are the personal, there is a list of cases that can be possibly covered.
+Because even each of them who are different to each other, they're still basically belong to personal user types.
+Using Satellid approach to do knowledge management should also consider to enable features corresponds to the expected and other cases of user types that listed here:
+
+\begin{easylist}[itemize]
+  & New user need to quickly use and understand the workflow, so they can immediately store their knowledge.
+  & Existing user can search for their existing stored knowledge, so they can immediately retrieve and read them.
+  & Regular person don't need to manually shout a new knowledge, so others can know what's the latest important knowledge they have.
+  & Colleagues need need to quickly know what others have know, so they can know and learn together.
+  & Student need to store and manage and find knowledge easily, so they can neatly organize a preparation for study, exam, or portfolio.
+  & Teacher need to share their knowledge faster and effectively throughout the class or workshop, so they can focus instead on teaching and involving students to do the actual work precisely.
+  & Event speaker need to liberate and outsource the presentation and discussion resource, so they with the audience can get the collaboration to live.
+  & Collaborator need to know and have the prerequisites to have, so they can work together at the same pace and level.
+  & Leader in a team need to collect all of their knowledge, so they can smarten and explain the knowledge.
+  & Recruiter of a new employee need to have the recruitees' knowledge in a consise and portable format, so they can easily compare and select who's the right candidate.
+  % & Boss need to know what their employees are up to in their knowledge automatically, so they don't need to ask them rigorously.
+  & Engineer need to quickly construct or choose a technology or some technologies based on their prior knowledge, so they know which are the most required and important elements.
+  & Information architect need to quickly architect the main partial of all information available that required, so they can structure the information within working environments.
+  & Developer need to be able to improve their skills in software development by knowing what are the useful logical knowledge for them, so they can be more productive and create a better software.
+  & Designer need to be able to improve their skills in user interface and design by knowing what are the creative way to do and creative resources out there, so they can produce more refined works and good design.
+  & Researcher need to be able collect various data and research information related to their current knowledge and purpose, so they can quickly connect and filter them to be used within their experiments.
+\end{easylist}
+
+Even not mentioned explicitly again within those user types, the pattern of knowledge management will normally always be the same, to make sure those knowledge are easily managed and neatly organized across each personal.
+
+% --------------------------------------------------
+\subsection{User Stories}
+
+Based on agile methodologies, we can incorporate the defined functionality into a simple statements called user stories.
+In related to the primary logic that have been created, the following user stories are the list of features along with points that must be implemented sorted by priority.
+The points are estimated by conjecture the required effort, in scale $1, 2, 3, 5, 8, 13$ (from easiest/shortest to hardest/longest).
+The things which need to be prioritized in particular sequential order of implementation (based on \ac{BREAD} model) are: Read, Browse, Add, Delete, Edit.
+
+\begin{easylist}
+& 1: As a System, I need to be run on supported platform and via a network
+& 2: As a System, I can have the data imported without the app opened
+& 1: As a User, I want to use the app via web browser
+& 1: As a User, I want to retrieve then read the knowledge that already stored
+& 3: As a User, I want to browse or search a knowledge and view the search result
+& 5: As a User, I want to add a new knowledge based on context
+& 1: As a User, I want to delete a stored knowledge
+& 3: As a User, I want to edit a stored knowledge
+\end{easylist}

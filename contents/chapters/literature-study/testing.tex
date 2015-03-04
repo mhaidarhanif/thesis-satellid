@@ -1,11 +1,39 @@
-\section{Testing}
-\label{sec:testing}
+\section{Software Testing}
+\label{sec:software-testing}
 
-%TODO The process of development...
-Testing is the process of executing a program with the intent of finding errors.~\autocite{Myers:2012:Testing:6}
+The process of development in technical product or service requires testing to verify the function of it can do as which had been planned.
+In scope of software, testing is the process of executing a program with the intent of finding errors.~\autocite{Myers:2012:Testing:6}
+It is about telling the condition of the product or service that passed through a suite of test that mainly define expectation.
 
-Unit testing
+% --------------------------------------------------
+\subsection{Unit Testing}
 
-\verb|/home/mhaidarh/all/docs/development/testing|
+Unit testing is a level of testing independently or individually.
+It is written to ensure some or all of particular method can perform it task completely as expected, that carried out in the presence of the stated assertion.
+The assurance is when those methods produces the expected output when given the predefined input.
+In short, unit testing is regarded from the programmer's actual code perspective, more focused on internal or part functions.
 
+% --------------------------------------------------
+\subsection{Functional Testing}
 
+Functional testing or integration testing is mostly a level of testing lots of method that works with each other, so it checks the integration between multiple components.
+The assurance is when those methods are working based on what users expecting the software system do.
+In short, functional test is regarded from the user's experience perspective, more focused on events and processes that occured when the system is used.
+
+% --------------------------------------------------
+\subsection{Automated Testing}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \vspace{-20pt}
+  \begin{center}
+    \includegraphics[width=5cm]{\dir/include/logo/velocity.png}
+  \end{center}
+  \vspace{-20pt}
+  \caption{Velocity logo}
+  \label{fig:velocity-logo}
+  \vspace{-10pt}
+\end{wrapfigure}
+
+Automated testing of those unit testing and functional testing is possible with the help of a testing framework.
+Specifically with Meteor framework, there is a testing framework package called Velocity.
+Velocity wraps and supports test framework, library, and reporting (that supported in JavaScript) like Mocha, Chai, Jasmine, and much others also for \ac{TDD}, \ac{BDD}, and \ac{DDT}; making them reactive as well.

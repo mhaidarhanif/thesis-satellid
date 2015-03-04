@@ -2,13 +2,13 @@
 \label{chap:analysis-design}
 
 \begin{figure}[ht]
-    \centering
-    \includegraphics[width=5cm]{\dir/include/satellid-logo.png}
-    \caption{Satellid logo}
-    \label{fig:satellid-logo}
+  \centering
+  \includegraphics[width=8cm]{\dir/include/satellid-logo.png}
+  \caption{Satellid logo}
+  \label{fig:satellid-logo}
 \end{figure}
 
-In this chapter we're first analyze and design to implement the basic Satellid system as fast as possible.
+In this chapter we first analyze and design to implement the basic Satellid system as fast as possible.
 There is a need to pass through a simple effective implementation method.
 The required phases in the method are simply:
 
@@ -18,3 +18,26 @@ The required phases in the method are simply:
 \end{easylist}
 
 %TODO All based on theories
+
+Related to our solution, if Satellid is compared against its most similar or popular tools in terms of storing data, information, and knowledge, \autoref{table:kms-comparison} can summarize the difference.
+The comparison is used to be the complying standard of the system.
+Note that not every tools mentioned are genuinely made to be a knowledge manager, but users could decide them inderectly from an encyclopedia, note taking app, or data platform, to be a knowledge manager.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c||c|c|c|c|c| }
+\hline
+Type         & Satellid   & Evernote      & Google Keep & Wikipedia    & Silk \\ \hline
+\hline
+Focus        & Knowledge  & Notes         & Notes       & Encyclopedia & Data \\ \hline
+\shortstack{Data\\Format} & JSON       & ENML          & JSON        & XML/Wiki     & JSON \\ \hline
+Vision       & Ubiquitous & \shortstack{Business\\Work} & Casual Use  & \shortstack{Public,\\Academic} & Visualization \\
+\hline
+\end{tabular}
+\caption{KMS-related tools comparison}
+\label{table:kms-comparison}
+\end{table}
+
+The type defines characteristic of each tools: focus is the primary substance usage of it, data format is the primary system to store and exchange data inside or outside the software, and vision is both the initial and real use case.
+As an important note, the initial version of Satellid may not be complete as the others currently have.
+For now we still only processes text data as the main features.

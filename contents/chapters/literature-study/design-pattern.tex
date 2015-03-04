@@ -2,8 +2,34 @@
 \label{sec:design-pattern}
 
 The design pattern used is simply using the most intuitive as possible.
-The most needed are interaction and interface mockup with
-With these simple and general patterns, the development process can quickly go from visualized plan into actual implementation rather than going through a long requirements document before.
+The most needed are creating interaction with BREAD model and interface with mockup.
+With these simple and general patterns, the development process can quickly go from visualized plan into actual implementation rather than going through a long conversion of requirements into design before.
+
+% --------------------------------------------------
+\subsection{BREAD Model}
+\label{sec:bread-model}
+
+\ac{BREAD} model consists of browse, read, edit, add, and delete, also including search by browse.
+It is the most common basic functions of persistent storage in a software.
+This is the minimum pattern that usual or general daily software can do based on user usage.
+Although there are a lot of similar name with it, such as \ac{SCRUD} and even \ac{SCRUD}, \ac{BREAD} can be more preferred if the software essentially not create a new thing, rather, add an existing thing but outside the software.
+Related to knowledge management, it is more familiar and fit to ``add a knowledge'' than ``create a knowledge''.
+As illustrated in \autoref{fig:bread-model}, it allows for:
+
+\begin{easylist}
+& Browse or search existing entries
+& Read the retrieved entries
+& Edit available entries
+& Add a new entry
+& Delete selected entries
+\end{easylist}
+
+\begin{figure}[h]
+    \centering
+    %TODO\includegraphics[width=\textwidth]{\dir/include/bread-model.png}
+    \caption{Browse, Read, Edit, Add, Delete interaction}
+    \label{fig:bread-model}
+\end{figure}
 
 % --------------------------------------------------
 \subsection{Simple Interaction and Interface}
@@ -29,7 +55,7 @@ In \ac{SPA}, template of the page that already is utilized to contain then prese
 
 \begin{figure}[htbp]
     \centering
-    %TODO \includegraphics[width=\textwidth]{\dir/include/spa.png}
-    \caption[Single Page Application]{Example of a Single Page Application}
+    %TODO-DESIGN \includegraphics[width=\textwidth]{\dir/include/spa-design.png}
+    \caption[Single Page Application design comparison]{Comparison of a Single Page Application design and not}
     \label{fig:spa}
 \end{figure}
