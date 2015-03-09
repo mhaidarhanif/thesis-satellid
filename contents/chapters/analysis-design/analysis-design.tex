@@ -17,9 +17,9 @@ The required phases in the method are simply:
 & Designing basic interaction and interface
 \end{easylist}
 
-%TODO All based on theories
-
-Related to our solution, if Satellid is compared against its most similar or popular tools in terms of storing data, information, and knowledge, \autoref{table:kms-comparison} can summarize the difference.
+Previously learned and based on hypotetical theories, Satellid should be a simple and easy system to handle specifically and focus towards knowledge management use.
+It should be based on context form, use the flexible data format \ac{JSON}, and ubiquitous by target vision.
+If Satellid is compared against its most similar or popular tools in terms of storing data, information, and knowledge, \autoref{table:kms-comparison} can summarize the difference.
 The comparison is used to be the complying standard of the system.
 Note that not every tools mentioned are genuinely made to be a knowledge manager, but users could decide them inderectly from an encyclopedia, note taking app, or data platform, to be a knowledge manager.
 
@@ -27,17 +27,29 @@ Note that not every tools mentioned are genuinely made to be a knowledge manager
 \centering
 \begin{tabular}{ |c||c|c|c|c|c| }
 \hline
-Type         & Satellid   & Evernote      & Google Keep & Wikipedia    & Silk \\ \hline
+Char.  & Satellid   & Evernote      & Google Keep & Wikipedia    & Silk \\ \hline
 \hline
-Focus        & Knowledge  & Notes         & Notes       & Encyclopedia & Data \\ \hline
+\shortstack{Usage\\Focus} & Knowledge  & Notes         & Notes       & Encyclopedia & Data \\ \hline
+\shortstack{Base\\Form}   & Context    & Free-form     & \shortstack{Mostly\\free-form} & \shortstack{Free-form,\\Hierarchical,\\\& Linked} & \shortstack{Free-form\\\& Tabular} \\ \hline
 \shortstack{Data\\Format} & JSON       & ENML          & JSON        & XML/Wiki     & JSON \\ \hline
-Vision       & Ubiquitous & \shortstack{Business\\Work} & Casual Use  & \shortstack{Public,\\Academic} & Visualization \\
+\shortstack{Target\\Vision} & Ubiquitous & \shortstack{Business\\Work} & Casual Use  & \shortstack{Public,\\Academic} & Visualization \\
 \hline
 \end{tabular}
 \caption{KMS-related tools comparison}
 \label{table:kms-comparison}
 \end{table}
 
-The type defines characteristic of each tools: focus is the primary substance usage of it, data format is the primary system to store and exchange data inside or outside the software, and vision is both the initial and real use case.
+The characteristics define each tools:
+\begin{inparaenum}[\itshape 1\upshape)]
+\item usage focus: the primary substance usage of it,
+\item base form: the base form feature of the system when handles the data from user,
+\item data format: the primary system to store and exchange data inside or outside the software, and
+\item target vision: both the initial and real use case on users.
+\end{inparaenum}
 As an important note, the initial version of Satellid may not be complete as the others currently have.
 For now we still only processes text data as the main features.
+In addition to the compared features, Satellid also available as an open project.
+Furthermore, high local only or offline support is the first class priority.
+Therefore, a user could just own their own Satellid without having to connect with the central official Satellid.
+This gives a lot of freedom in terms of data liberty and experience usage.
+This could conclude that Satellid is similar to any mentioned tools or system, but very different in philosophical and development direction.

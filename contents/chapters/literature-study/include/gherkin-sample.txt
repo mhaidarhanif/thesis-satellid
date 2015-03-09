@@ -1,0 +1,13 @@
+Feature: The particular feature title
+
+  More in depth description, related to the business value
+  And more additional information
+
+  Scenario: Specific situation description
+    Given a condition
+    And an other condition
+    When a performed action by someone
+    Then an output is presented
+
+  Scenario: Other situation description
+    ...

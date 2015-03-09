@@ -6,13 +6,13 @@ The most needed are creating interaction with BREAD model and interface with moc
 With these simple and general patterns, the development process can quickly go from visualized plan into actual implementation rather than going through a long conversion of requirements into design before.
 
 % --------------------------------------------------
-\subsection{BREAD Model}
+\subsection{{BREAD} Model}
 \label{sec:bread-model}
 
 \ac{BREAD} model consists of browse, read, edit, add, and delete, also including search by browse.
 It is the most common basic functions of persistent storage in a software.
 This is the minimum pattern that usual or general daily software can do based on user usage.
-Although there are a lot of similar name with it, such as \ac{SCRUD} and even \ac{SCRUD}, \ac{BREAD} can be more preferred if the software essentially not create a new thing, rather, add an existing thing but outside the software.
+Although there are a lot of similar name with it, such as \ac{CRUD} and even \ac{SCRUD}, \ac{BREAD} can be more preferred if the software essentially not create a new thing, rather, add an existing thing but outside the software.
 Related to knowledge management, it is more familiar and fit to ``add a knowledge'' than ``create a knowledge''.
 As illustrated in \autoref{fig:bread-model}, it allows for:
 
@@ -26,7 +26,7 @@ As illustrated in \autoref{fig:bread-model}, it allows for:
 
 \begin{figure}[h]
     \centering
-    %TODO\includegraphics[width=\textwidth]{\dir/include/bread-model.png}
+    %TODO-DESIGN \includegraphics[width=\textwidth]{\dir/include/bread-model.png}
     \caption{Browse, Read, Edit, Add, Delete interaction}
     \label{fig:bread-model}
 \end{figure}
@@ -42,9 +42,6 @@ It is a low fidelity design that shows the main software functionality without t
 Mockup is a realistric representation to visualize the design, if we already have the information architecture that needed.
 It is a middle to high fidelity design of how the software look, it basically more focus towards the aesthetics.
 \autoref{fig:wireframe-mockup} is an example of an already built wireframe and mockup for some part of an application.
-In user's view, simple interaction and interface can use \ac{SPA}\index{single page application} approach as the client app view.
-\ac{SPA} is a web application that can fits on a one web page, so all the codes can be retrieved with only a single page load, it is a contrary to the multi page application that has many pages or windows.
-In \ac{SPA}, template of the page that already is utilized to contain then present only the required data rather than sending and receiving the whole page, so that its logic can also be represented simply like in \autoref{fig:spa}.
 
 \begin{figure}[htbp]
     \centering
@@ -53,9 +50,17 @@ In \ac{SPA}, template of the page that already is utilized to contain then prese
     \label{fig:wireframe-mockup}
 \end{figure}
 
+% --------------------------------------------------
+\subsection{Single Page Application (SPA)}
+\label{ssec:spa}
+
+In actual user's view, simple interaction and interface can use \ac{SPA}\index{SPA}\index{single page application} approach as the client app view.
+\ac{SPA} model or design is a web application that can fits on a one web page, so all the codes can be retrieved with only a single page load, it is a contrary to the multi page application that has many pages or windows.
+In \ac{SPA}, template of the page that already is utilized to contain then present only the required data rather than sending and receiving the whole page, so that its logic can also be represented simply like in \autoref{fig:spa}, which also compared with other model/design.
+
 \begin{figure}[htbp]
     \centering
     %TODO-DESIGN \includegraphics[width=\textwidth]{\dir/include/spa-design.png}
-    \caption[Single Page Application design comparison]{Comparison of a Single Page Application design and not}
+    \caption[Single Page Application design comparison]{Comparison of a Single Page Application design and other}
     \label{fig:spa}
 \end{figure}

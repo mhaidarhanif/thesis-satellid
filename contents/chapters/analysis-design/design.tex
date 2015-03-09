@@ -6,12 +6,12 @@
 
 To comply with the various shapes of knowledge context, there should be a feature system that can handle them.
 It can be done with a major role of feature system that Satellid use called ``Contextual''.
-The main ofsystem is by shortening the steps that needed to do a knowledge management that have context, with making it more effective and accessible.
+The main system is by shortening the steps that needed to do a knowledge management that have context, naturally with making it more effective and accessible.
 
 \begin{figure}[htb]
     \centering
-    % \includegraphics[width=\textwidth]{\dir/include/satellid-contextual}
-    \caption{Contextual system visual representation}
+    %TODO-DESIGN \includegraphics[width=\textwidth]{\dir/include/satellid-contextual}
+    \caption{Satellid's Contextual system visual representation}
     \label{fig:satellid-contextual}
 \end{figure}
 
@@ -20,9 +20,10 @@ With this, user will eventually always structure their data, and even create mor
 In addition to this, category and tagging could also be built.
 At the later time, it can be easily sorted faster than just using category or tags.
 The difference of context with category or tag is how it handles specificity.
-Context is very specific as a descriptor so it can be fully understood and assessed easily, rather than category or tag that is more widely and freely determined.
+Context is a very general descriptor so it can be fully understand and assess the content easily, rather than category or tag that is more widely and freely determined or should be specific.
+Even though, a contexted knowledge could have category or tag.
 For example, \textit{The Merriam-Webster Dictionary} may be categorized as a ``dictionary'', ``book'', ``reference'', ``glossary'', ``thesaurus'' and tagged as ``word'', ``language'', ``english'', ``''; but its context basically just a ``publication''.
-So it can be in the same context like \text{JavaScript, The Definitive Guide} or even \text{Iron Man comic}.
+So it can be in the same context like a \textit{O'Reilly Media's JavaScript, The Definitive Guide book} or even a \textit{Marvel's Iron Man comic}.
 Contextual provide some of the most common type of knowledge with its key attributes.
 The basic properties of metadata are including ID, Context, Date \& Time (Created \& Updated); while others are the Content or Detail.
 As already defined, the lists below are the sorted version of prospected key attributes related to single context that needed and can be used.
@@ -31,21 +32,21 @@ Also sometimes blank field is allowed like if there is unknown location and URL,
 
 \begin{easylist}
 & Definition
-  && Name, Description, Source URL
+  && Name, Description, Source, Author, URL
 & Person
-  && Name (Full, First, Last, Nick), Gender, Birth Date or Age, Title (Job), Biography, Location (Address \& Coordinates), Phone, Email, Website, URL
+  && Name (Full, First, Last, Nick, Alias), Gender, Birth Date or Age, Title (Job), Biography, Location (Address, City, Country, \& Coordinates), Phone, Email, Website, URL
 & Organization
-  && Name, Type (School, University, Institution, Company, Group, Community, Band), Industry, Date (Founded), Location (Address \& Coordinates), Product (their Services or Goods), URL
+  && Name, Type (School, University, Institution, Company, Group, Community, Band, etc), Industry, Date (Founded), Location (Address \& Coordinates), Product (their Services or Goods), URL
 & Product
-  && Name, Type (Service, Hardware, Software, Food, Clothing), Tagline, Description, Brand Detail, URL
+  && Name, Type (Service, Hardware, Software, Food, Clothing, etc), Tagline, Description, Brand Detail, URL
 & Publication
-  && Title, Type (Article, Book, Paper, Dictionary, Novel, Tutorial, Comic, Website, Blog), Author, Description, URL
+  && Title, Type (Article, Book, Paper, Dictionary, Novel, Tutorial, Comic, Website, Blog, etc), Author, Description, URL
 & Place
-  && Name, Type (Station, Library, Park, Shop, Restaurant, Mall, Hotel, City, Country), Location (Address \& Coordinates), URL
+  && Name, Type (Station, Library, Park, Shop, Restaurant, Mall, Hotel, City, Country, etc), Location (Address \& Coordinates), URL
 & Event
-  && Title, Type (Meetup, Seminar, Workshop, Conference, Festival), Location (Address), Date, Presenter, Sponsor, URL
+  && Title, Type (Meetup, Seminar, Workshop, Conference, Festival, etc), Location (Address), Date, Presenter, Sponsor, URL
 & Multimedia
-  && Title, Type (Photo, Image, Video, Film), Location, Date and Time (Published), Duration, Creator, URL
+  && Title, Type (Photo, Image, Video, Film, etc), Location, Date and Time (Published), Duration, Creator, URL
 & Miscellaneous
   && Title, Text, URL
 \end{easylist}
@@ -57,7 +58,7 @@ Other contexts that still classified as miscellaneous or mixed are like Story, R
 
 Since the primary reason to build the implementation of Satellid is to enable daily knowledge management for personal, the main focus to enable that person who frequently get knowledge or wanted to store their knowledge in a simple manner.
 The primary functionality is to do \ac{BREAD}, also without having to bother the entries arrangement and everything is managed in a predefined context.
-The application could be just deployable local network (easily also in their own computer) or accessed from the Web via Internet.
+The application could be just deployable via a local network (easily also in their own computer) or accessed from the Web via Internet.
 In a very simple way of interaction, it should be very intuitive.
 To keep the process faster and shorter, all of the functional process can be done in one single interface layout of the application.
 It all could happen with a simplified unified interface.
@@ -68,7 +69,7 @@ So there is no need to switch back and forth to different views of browse, searc
 \begin{description}
 \item [User]: The primary person who use Satellid
 \item [System]: The Satellid application
-\item [Database]: The databased that used by Satellid
+\item [Database]: The database that used by Satellid
 \item [Knowledge]: The knowledge inside database that accessed and managed with Satellid
 \item [Template]: The template to wrap the data schema
 \item [Search bar]: The input that User can use to search for knowledge
@@ -120,14 +121,14 @@ So there is no need to switch back and forth to different views of browse, searc
 As previously known, the application architecture is heavily based on Meteor platform.
 It also covers its stack such as the JavaScript platform (Node.js), NoSQL database (MongoDB), reactive protocol (DDP).
 All of them run in a regular web application environment, which there are client-side and server-side connected via a network that can be Internet or local network.
-Based on simple web application architecture, the application is architected as in \autoref{fig:satellid-arch-app}.
+Based on simple web application architecture, the application is architected as in \autoref{fig:satellid-app-arch}.
 % [?] inspired by
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=8cm]{\dir/include/satellid-arch-app.png}
+    \includegraphics[width=8cm]{\dir/include/satellid-app-arch.png}
     \caption[Satellid Application Architecture]{The architecture of Satellid application}
-    \label{fig:satellid-arch-app}
+    \label{fig:satellid-app-arch}
 \end{figure}
 
 The application started from the server system, running it including Node.js platform, Meteor platform, and server NoSQL database.
@@ -140,21 +141,20 @@ Between the two, the protocol called \ac{DDP} maintain and manage the data trans
 \subsection{User Interface and Interaction}
 
 Here are the complete user interface and interaction on the web app version of Satellid.
-The main interface or \ac{UI} design is laid out very simple, just like in \autoref{fig:satellid-ui}.
+The application main interface or \ac{UI} design is laid out very simple with \ac{SPA} model/design, just like in \autoref{fig:satellid-app-ui}.
 
 \begin{figure}[htb]
     \centering
-    % \includegraphics[width=\textwidth]{\dir/include/satellid-ui}
-    \caption{Main interface design of Satellid}
-    \label{fig:satellid-ui}
+    %TODO-DESIGN \includegraphics[width=\textwidth]{\dir/include/satellid-app-ui.png}
+    \caption{Main interface design of Satellid app}
+    \label{fig:satellid-app-ui}
 \end{figure}
 
-And then, the main interaction or \ac{UX} can be defined just like in \autoref{fig:satellid-ux}
+And then, the application main interaction or \ac{UX} of each user feature flow can be defined just like in \autoref{fig:satellid-ux}
 
-%TODO User flow
 \begin{figure}[htb]
     \centering
-    % \includegraphics[width=\textwidth]{\dir/include/satellid-ux}
-    \caption{Main interaction design of Satellid}
-    \label{fig:satellid-ux}
+    %TODO-DESIGN \includegraphics[width=\textwidth]{\dir/include/satellid-app-ux.png}
+    \caption{Main interaction design of Satellid app}
+    \label{fig:satellid-app-ux}
 \end{figure}
