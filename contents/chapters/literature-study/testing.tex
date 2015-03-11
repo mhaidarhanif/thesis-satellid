@@ -1,7 +1,7 @@
 \section{Software Testing}
 \label{sec:software-testing}
 
-The process of development in technical product or service requires testing to verify the function of it can do as which had been planned.
+The process of development in technical product or service requires testing to verify or assert the function of its feeatures which had been planned.
 In scope of software, testing is the process of executing a program with the intent of finding errors.~\autocite{Myers:2012:Testing:6}
 It is about telling the condition of the system (product or service) that passed through a suite of test that mainly define expectation.
 The system itself that is being tested is called \ac{SUT}.
@@ -10,7 +10,7 @@ Ordinarily, testing requires to do the following steps:
 \begin{inparaenum}[\itshape 1\upshape)]
 \item setup,
 \item execute,
-\item verify, and
+\item verify or assert, and
 \item tear down
 \end{inparaenum}
 Also commonly test is labeled either red as failed test or green as passed test.
@@ -56,7 +56,7 @@ For example, a simple \ac{BREAD}-enabled application tested for its ability to b
 
 Automated testing of those various types of testing are possible with the help of a testing framework.
 Specifically with Meteor framework, there is a testing framework package called Velocity.
-Velocity wraps and supports test framework, library, and reporting (that supported in JavaScript) like Mocha, Chai, Jasmine, and much others also for \ac{TDD}, \ac{BDD}, and \ac{ATDD}; making them reactive as well.
+Velocity wraps and supports test framework, library, and reporting (that supported in JavaScript) like Mocha, Chai, Jasmine, Cucumber, and much others also for \ac{TDD}, \ac{BDD}, and \ac{ATDD}; making them reactive as well.
 
 % --------------------------------------------------
 \subsection{Test First Workflow}
@@ -95,7 +95,15 @@ The process of \ac{ATDD} illustrated in \autoref{fig:atdd}.
 \end{figure}
 
 The first phase is to define the specifications into a both human-readable and business readable format or \ac{DSL}.
-The language commonly used is Gherkin.
+The language commonly used is Gherkin, a pseudonatural language to specify features, more likely to be examples or state estimation.
+The process or usage to implement the test is to
+\begin{inparaenum}[\itshape 1\upshape)]
+\item parse the Gherkin syntax by writing each step definitions
+\item match those steps with test functions that written after
+\item execute the matched test functions with the syntax, it will pass or fail
+\item generate the report from performed tests
+\end{inparaenum}
+
 Below listing \autoref{lst:gherkin-sample} is an example of a feature file in Gherkin syntax.
 
 \begin{listing}[htb]
@@ -105,7 +113,7 @@ Below listing \autoref{lst:gherkin-sample} is an example of a feature file in Gh
 \end{listing}
 
 After that, automate all of those steps in the scenarios within the test code based on that.
-The steps will be implemented as an executable code.
+The steps will be implemented as an executable code, like in \autoref{lst:gherkin-executable}.
 
 \begin{listing}[!htb]
 \caption{Example of an executable feature file}

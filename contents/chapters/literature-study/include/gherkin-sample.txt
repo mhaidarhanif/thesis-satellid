@@ -1,7 +1,11 @@
-Feature: The particular feature title
+Feature: Example feature title
 
   More in depth description, related to the business value
   And more additional information
+
+  As a user of this feature
+  I want to have these steps
+  So that I can have the expected result
 
   Scenario: Specific situation description
     Given a condition

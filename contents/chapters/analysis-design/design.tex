@@ -10,15 +10,14 @@ The main system is by shortening the steps that needed to do a knowledge managem
 
 \begin{figure}[htb]
     \centering
-    %TODO-DESIGN \includegraphics[width=\textwidth]{\dir/include/satellid-contextual}
+    \includegraphics[width=\textwidth]{\dir/include/satellid-contextual.png}
     \caption{Satellid's Contextual system visual representation}
     \label{fig:satellid-contextual}
 \end{figure}
 
 Contextual, illustrated as in \autoref{fig:satellid-contextual}, utilize inputted knowledge and template that are used together to form the context and structure.
 With this, user will eventually always structure their data, and even create more or modify available data field.
-In addition to this, category and tagging could also be built.
-At the later time, it can be easily sorted faster than just using category or tags.
+In addition to this, categorization and tagging could also be included and built.
 The difference of context with category or tag is how it handles specificity.
 Context is a very general descriptor so it can be fully understand and assess the content easily, rather than category or tag that is more widely and freely determined or should be specific.
 Even though, a contexted knowledge could have category or tag.
@@ -28,7 +27,7 @@ Contextual provide some of the most common type of knowledge with its key attrib
 The basic properties of metadata are including ID, Context, Date \& Time (Created \& Updated); while others are the Content or Detail.
 As already defined, the lists below are the sorted version of prospected key attributes related to single context that needed and can be used.
 Each of them can have category or label if appropriate, even additional custom text.
-Also sometimes blank field is allowed like if there is unknown location and URL, while in other condition multiple entries could occur.
+Also sometimes blank field is allowed like if there is unknown location and \ac{URL}, while in other condition multiple entries could occur.
 
 \begin{easylist}
 & Definition
@@ -51,7 +50,8 @@ Also sometimes blank field is allowed like if there is unknown location and URL,
   && Title, Text, URL
 \end{easylist}
 
-Other contexts that still classified as miscellaneous or mixed are like Story, Rules, Source Code, Prerequisites, Manifesto, etc.
+Other contexts that still classified as miscellaneous or mixed are like Reminder, Story, Rules, Code, Requisites, Manifesto, random notes, etc.
+Simply put, miscellaneous is the knowledge that have not been built its general context or other things that have not prespecified yet.
 
 % --------------------------------------------------
 \subsection{Functionality Flow}
@@ -64,7 +64,8 @@ To keep the process faster and shorter, all of the functional process can be don
 It all could happen with a simplified unified interface.
 So there is no need to switch back and forth to different views of browse, search, read, edit, add, and delete.
 
-\noindent There are some terminologies or parts of the interaction used in this flow, there are:
+\noindent There are some terminologies or parts of the interaction used in this flow:
+\vspace{-10pt}
 
 \begin{description}
 \item [User]: The primary person who use Satellid
@@ -74,8 +75,8 @@ So there is no need to switch back and forth to different views of browse, searc
 \item [Template]: The template to wrap the data schema
 \item [Search bar]: The input that User can use to search for knowledge
 \item [Buttons]: The input or modifier that User can use to add, edit, and delete a knowledge
-\item [Knowledge]: The entity of knowledge, its object content
-\item [Knowledge Collection]: The output that User can view the knowledge cards
+\item [Knowledge Card]: The entity of a single knowledge framed with context, its object content
+\item [Knowledge Collection]: The output that User can view the list of knowledge cards
 \end{description}
 
 \noindent The System will do the following flow:
@@ -89,30 +90,31 @@ So there is no need to switch back and forth to different views of browse, searc
 \noindent The User interactions are defined by these flow:
 
 \begin{easylist}[enumerate]
-& User can use, turn on and turn off the System
+& User can turn on and turn off the System.
+& User can access and use the System.
 & User can interact with the System to:
-  && Browse the stored Knowledge
-  && Search a stored Knowledge
-  && Read a stored Knowledge
-  && Add a new Knowledge
-  && Edit a stored Knowledge
-  && Delete a stored Knowledge
+  && Browse the stored Knowledge.
+  && Search a stored Knowledge.
+  && Read a stored Knowledge.
+  && Add a new Knowledge.
+  && Edit a stored Knowledge.
+  && Delete a stored Knowledge.
 & When User enter a text into the search bar:
-  && Search a Knowledge based on typed text string
-  && System search for matching text, automatically without having to press for a button
-  && If matched Text is found, System show the search result
-  && User get the found Knowledge
+  && Search a Knowledge based on typed text string.
+  && System search for matching text, automatically without having to press for a button.
+  && If matched Text is found, System show the search result.
+  && User get the found Knowledge.
 & When User click/tap the add button beside the search bar:
-  && Add a new knowledge based on its context
-  && User complete the new Knowldge
-  && If new Knowledge is successfully inputted, System store the new Knowledge into the System
+  && Add a new knowledge based on its context.
+  && User complete the new Knowldge.
+  && If new Knowledge is successfully inputted, System store the new Knowledge into the System.
 & When User click/tap the edit button beside the knowledge card:
-  && Edit an existing knowledge
-  && User edit the Knowldge
-  && If the Knowledge is successfully edited, System store the edited Knowledge into the System
+  && Edit an existing knowledge.
+  && User edit the Knowldge.
+  && If the Knowledge is successfully edited, System store the edited Knowledge into the System.
 & When User click/tap the delete button beside the knowledge card:
-  && Delete an existing knowledge
-  && If the Knowledge is confirmed to be deleted, System delete the Knowledge from the System
+  && Delete an existing knowledge.
+  && If the Knowledge is confirmed to be deleted, System delete the Knowledge from the System.
 \end{easylist}
 
 % --------------------------------------------------
@@ -122,7 +124,6 @@ As previously known, the application architecture is heavily based on Meteor pla
 It also covers its stack such as the JavaScript platform (Node.js), NoSQL database (MongoDB), reactive protocol (DDP).
 All of them run in a regular web application environment, which there are client-side and server-side connected via a network that can be Internet or local network.
 Based on simple web application architecture, the application is architected as in \autoref{fig:satellid-app-arch}.
-% [?] inspired by
 
 \begin{figure}[htbp]
     \centering
@@ -141,20 +142,51 @@ Between the two, the protocol called \ac{DDP} maintain and manage the data trans
 \subsection{User Interface and Interaction}
 
 Here are the complete user interface and interaction on the web app version of Satellid.
-The application main interface or \ac{UI} design is laid out very simple with \ac{SPA} model/design, just like in \autoref{fig:satellid-app-ui}.
+The application main interface or \ac{UI} design is laid out very simple with \ac{SPA} model/design, just like in \autoref{fig:satellid-app-ui}, including some mockups or example.
+This \ac{UI} figures what the user see in the web app dimension.
+And then, the application main interaction or \ac{UX} of each functionality flow of user interactions can be defined just like in \autoref{fig:satellid-app-ux}.
+Note that these designs are intended mainly for the initial purpose of documentation only.
+Since there is an agile works that perform in the development process, the design or documentation may change frequently and continuously for each iteration or modification, resulting a slightly different appearance within the actual implementation.
+
+As seen in \autoref{fig:satellid-app-ui}, the \ac{UI} design is really straightforward.
+There is a logo on top of the interface.
+The search bar is below the logo, then the add button is beside it.
+The form box is the field to add knowledge.
+All the knowledge collection that visualized in cards are beneath them.
+Each knowledge card has a content, the knowledge
+
+As seen in \autoref{fig:satellid-app-ux}, The \ac{UX} design however is a bit more complex as it's explaining on how the application will be used.
+Also it presents the design like a barebone structure with the process of the \ac{UI}.
+In an unordered fashion, there are some interaction process that will be done like in the design.
+Each components are annotated with actionable interaction and some detailed description or behavior.
+Based on functionality flow, below are the available actions and explanation for User:
+
+\begin{easylist}[enumerate]
+& Turn on and turn off the System via terminal/\ac{CLI}.
+& Access and use the System via Web browser.
+& Type and search in the search bar that could automatically show the search result.
+& Browse the existing knowledge or search result in the collection of cards.
+& Add a knowledge that will show the form box to fill.
+  && Choose a predefined context.
+  && Fill each field with value that could be text, number, date-time, etc.
+  && Save to store the knowledge.
+  && Cancel to close the form box.
+& Edit a knowledge with edit mode of form box.
+  && Currently the context should and could not be changed, so there will be no collision between old and new content structure.
+  && Each field except the header identity (name or title) is optional to fill.
+& Delete a knowledge.
+\end{easylist}
 
 \begin{figure}[htb]
-    \centering
-    %TODO-DESIGN \includegraphics[width=\textwidth]{\dir/include/satellid-app-ui.png}
-    \caption{Main interface design of Satellid app}
-    \label{fig:satellid-app-ui}
+  \centering
+  \includegraphics[width=\textwidth]{\dir/include/satellid-app-ui.png}
+  \caption{Initial user interface design of Satellid app}
+  \label{fig:satellid-app-ui}
 \end{figure}
 
-And then, the application main interaction or \ac{UX} of each user feature flow can be defined just like in \autoref{fig:satellid-ux}
-
 \begin{figure}[htb]
-    \centering
-    %TODO-DESIGN \includegraphics[width=\textwidth]{\dir/include/satellid-app-ux.png}
-    \caption{Main interaction design of Satellid app}
-    \label{fig:satellid-app-ux}
+  \centering
+  \includegraphics[width=15cm]{\dir/include/satellid-app-ux.png}
+  \caption{Initial user interaction design of Satellid app}
+  \label{fig:satellid-app-ux}
 \end{figure}

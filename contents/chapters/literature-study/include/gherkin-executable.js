@@ -1,11 +1,9 @@
-describe("The particular feature title", function() {
-  describe("Specific situation description", function() {
-    it("will have an expected output description", function() {
-      // Setup: Given a condition, And an other condition
-      // Execute: When a performed action by someone
-      // Verify: Then an output is presented
-    });
-    it("will be another condition description", function() {});
+describe("Example feature title", function() {
+  describe("Scenario: Specific situation description", function() {
+    it("Setup: Given a condition, And an other condition", function() {});
+    it("Setup: And an other condition", function() {});
+    it("Execute: When a performed action by someone", function() {});
+    it("Verify: Then an output is presented", function() {});
   });
-  describe("Other situation description", function() {});
+  describe("Scenario: Other situation description", function() {});
 });

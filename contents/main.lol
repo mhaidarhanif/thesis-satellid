@@ -43,7 +43,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {listing}{\numberline {10}{\ignorespaces Example of feature file in Gherkin\relax }}{37}{listing.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {listing}{\numberline {11}{\ignorespaces Example of an executable feature file\relax }}{37}{listing.11}
+\contentsline {listing}{\numberline {11}{\ignorespaces Example of an executable feature file\relax }}{38}{listing.11}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -53,9 +53,11 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {listing}{\numberline {12}{\ignorespaces Satellid server code snippets\relax }}{51}{listing.12}
+\contentsline {listing}{\numberline {12}{\ignorespaces Satellid server code snippets\relax }}{54}{listing.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {listing}{\numberline {13}{\ignorespaces Satellid client code snippets\relax }}{51}{listing.13}
+\contentsline {listing}{\numberline {13}{\ignorespaces Satellid client code snippets\relax }}{54}{listing.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {listing}{\numberline {14}{\ignorespaces Committing and pushing the repo with Git\relax }}{55}{listing.14}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
