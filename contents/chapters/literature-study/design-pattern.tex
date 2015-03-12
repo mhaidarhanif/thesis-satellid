@@ -17,31 +17,39 @@ Related to knowledge management, it is more familiar and fit to ``add a knowledg
 As illustrated in \autoref{fig:bread-model}, it allows for:
 
 \begin{easylist}
-& Browse or search existing entries
-& Read the retrieved entries
-& Edit available entries
-& Add a new entry
-& Delete selected entries
+& Browse or search existing entries.
+& Read the retrieved entries.
+& Edit available entries.
+& Add a new entry.
+& Delete selected entries.
 \end{easylist}
 
 \begin{figure}[h]
     \centering
-    %TODO-DESIGN \includegraphics[width=\textwidth]{\dir/include/bread-model.png}
+    \includegraphics[width=8cm]{\dir/include/bread-model.png}
     \caption{Browse, Read, Edit, Add, Delete interaction}
     \label{fig:bread-model}
 \end{figure}
+
+For example purpose, let's say all data $A,B$ will go through \ac{BREAD} model operation.
+If browse for $A$ from all data, then get just $A$.
+If read $A,B$ from all data, then get $A,B$.
+If edit $B$ in all data to $C$, then all data become $A,C$.
+If add $C$ to all data, then all data become $A,B,C$.
+If delete $B$ from all data, then all data become $A$.
 
 % --------------------------------------------------
 \subsection{Simple Interaction and Interface}
 \label{ssec:simple-interfaction}
 
-Particularly a very simple web app that doesn't require in depth logic explanation, can directly be created in a wireframe and mockup.
+Particularly a very simple web app that doesn't require in depth logic explanation, can directly be planned in visual way of wireframe and mockup.
 So that is what a simple interaction and interface can do and seen.
 Wireframe is a typical way to put the bare essential elements (such as texts and images) onto a design, it contains all the information architecture.
 It is a low fidelity design that shows the main software functionality without the aesthetics.
 Mockup is a realistric representation to visualize the design, if we already have the information architecture that needed.
 It is a middle to high fidelity design of how the software look, it basically more focus towards the aesthetics.
 \autoref{fig:wireframe-mockup} is an example of an already built wireframe and mockup for some part of an application.
+Mockup is more close to the actual or expected result especially the visual details of layout, color, and typography.
 
 \begin{figure}[htbp]
     \centering
