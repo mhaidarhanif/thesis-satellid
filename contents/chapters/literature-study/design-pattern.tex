@@ -4,6 +4,7 @@
 The design pattern used is simply using the most intuitive as possible.
 The most needed are creating interaction with BREAD model and interface with mockup.
 With these simple and general patterns, the development process can quickly go from visualized plan into actual implementation rather than going through a long conversion of requirements into design before.
+What can be used here are for multiple purposes such as functionality, logic flow, visual or aesthetics.
 
 % --------------------------------------------------
 \subsection{{BREAD} Model}
@@ -52,23 +53,25 @@ It is a middle to high fidelity design of how the software look, it basically mo
 Mockup is more close to the actual or expected result especially the visual details of layout, color, and typography.
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=\textwidth]{\dir/include/wireframe-mockup.jpg}
-    \caption[Wireframe vs Mockup Example]{Example of wireframe vs mockup \autocite{Trentini2015WM}}
-    \label{fig:wireframe-mockup}
+  \centering
+  \includegraphics[width=\textwidth]{\dir/include/wireframe-mockup.jpg}
+  \caption[Wireframe vs Mockup Example]{Example of wireframe vs mockup \autocite{Trentini2015WM}}
+  \label{fig:wireframe-mockup}
 \end{figure}
 
 % --------------------------------------------------
 \subsection{Single Page Application (SPA)}
 \label{ssec:spa}
 
-In actual user's view, simple interaction and interface can use \ac{SPA}\index{SPA}\index{single page application} approach as the client app view.
+In actual user's view, a simple interaction and interface can use \ac{SPA}\index{SPA}\index{single page application} approach as the client app view.
 \ac{SPA} model or design is a web application that can fits on a one web page, so all the codes can be retrieved with only a single page load, it is a contrary to the multi page application that has many pages or windows.
-In \ac{SPA}, template of the page that already is utilized to contain then present only the required data rather than sending and receiving the whole page, so that its logic can also be represented simply like in \autoref{fig:spa}, which also compared with other model/design.
+In \ac{SPA}, template of the page that already is utilized to contain then present only the required data rather than sending and receiving the whole page, so that its logic can also be represented simply like in \autoref{fig:spa}, which also compared with other model/design which is a common or traditional web app design.
+It employs design from both application technology architecture and visual point of view.
+Simply put, \ac{SPA} is not using multiple windows or pages to layout the interface, without the need to move around between some different places.
 
 \begin{figure}[htbp]
-    \centering
-    %TODO-DESIGN \includegraphics[width=\textwidth]{\dir/include/spa-design.png}
-    \caption[Single Page Application design comparison]{Comparison of a Single Page Application design and other}
-    \label{fig:spa}
+  \centering
+  \includegraphics[width=10cm]{\dir/include/spa-design.png}
+  \caption[Single Page Application design comparison]{Comparison of a Single Page Application design and other}
+  \label{fig:spa}
 \end{figure}
