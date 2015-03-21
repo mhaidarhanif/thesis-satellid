@@ -10,34 +10,97 @@ In addition, open sourcing the software source code is also done and described.
 JavaScript and Meteor are used on both of the sides, while Node.js is used on the server side, all coded to implement the designed system.
 JavaScript is chosen more solely because it is the primary language of the Web.
 Meteor is chosen because it is heavily based on JavaScript and easy to learn than any other framework out there.
-
-TODO Some snippets of server-side code
+While in code development, JavaScript and CoffeeScript are both used for the logic implementation.
+Below there are snippets of the code, \autoref{lst:satellid-code-server} is in server side and \autoref{lst:satellid-code-client} is in client side.
+Even meteor can read all of the code in any place within the same reposutory, in actual repository however there is a convention to put the server side code into the \verb|server| folder and the client side code into the \verb|client| folder.
+Both listings are intentedly to only show at a glance the upmost parts that separate each unit side.
 
 \begin{listing}[htbp]
-  \caption{Satellid server code snippets}
-  %TODO-CODE \inputminted{javascript}{\dir/include/satellid-server.coffee}
+  \caption{Satellid server side code snippets}
+  \inputminted{javascript}{\dir/include/code/satellid-server.js}
   \label{lst:satellid-code-server}
 \end{listing}
 
-TODO Some snippets of client-side code
-
 \begin{listing}[htbp]
-  \caption{Satellid client code snippets}
-  %TODO-CODE \inputminted{javascript}{\dir/include/satellid-client.coffee}
+  \caption{Satellid client side code snippets}
+  \inputminted{javascript}{\dir/include/code/satellid-client.js}
   \label{lst:satellid-code-client}
 \end{listing}
 
 % --------------------------------------------------
+\subsection{Running and Deployment}
+
+Running Satellid on our own local environment is just with \verb|meteor run| command:
+
+\begin{listing}[!h]
+\caption{Committing and pushing the repo with Git}
+\inputminted{shell-session}{\dir/include/satellid-meteor-run.shell-session}
+\label{lst:satellid-run}
+\end{listing}
+
+Deploying Satellid to the Internet with Meteor is easy with the following \verb|meteor deploy appname.meteor.com| command:
+
+\begin{listing}[!h]
+\caption{Committing and pushing the repo with Git}
+\inputminted{shell-session}{\dir/include/satellid-meteor-deploy.shell-session}
+\label{lst:satellid-deploy}
+\end{listing}
+
+After this, the application result is live and available at \url{http://satellid.meteor.com}.
+
+% --------------------------------------------------
 \subsection{Result}
 
-TODO Final screenshot
+The screenshot of final result is like in \autoref{fig:satellid-app-result}.
+Then each of the results of \ac{BREAD} feature or operation, are like in
+\autoref{fig:satellid-app-results_read},
+\autoref{fig:satellid-app-results_browse},
+\autoref{fig:satellid-app-results_add},
+\autoref{fig:satellid-app-results_edit}, and
+\autoref{fig:satellid-app-results_delete}
 
-\begin{figure}[htb]
+\begin{figure}[!htp]
   \centering
-  %TODO-SCREEN \includegraphics[width=\textwidth]{\dir/include/satellid-result.png}
-  \caption{Final screenshot of the development result}
-  \label{fig:satellid-result}
+  \includegraphics[width=\textwidth]{\dir/include/satellid-app-result.png}
+  \caption{Final app screenshot of the development result}
+  \label{fig:satellid-app-result}
 \end{figure}
+
+\begin{figure}[!htp]
+  \centering
+  \includegraphics[height=10cm]{\dir/include/satellid-app-results_read.png}
+  \caption{Screenshot of READ interaction}
+  \label{fig:satellid-app-results_read}
+\end{figure}
+
+\begin{figure}[!htp]
+  \centering
+  \includegraphics[height=10cm]{\dir/include/satellid-app-results_browse.png}
+  \caption{Screenshot of BROWSE interaction}
+  \label{fig:satellid-app-results_browse}
+\end{figure}
+
+\begin{figure}[!htp]
+  \centering
+  \includegraphics[height=10cm]{\dir/include/satellid-app-results_add.png}
+  \caption{Screenshot of ADD interaction}
+  \label{fig:satellid-app-results_add}
+\end{figure}
+
+\begin{figure}[!htp]
+  \centering
+  \includegraphics[height=10cm]{\dir/include/satellid-app-results_edit.png}
+  \caption{Screenshot of EDIT interaction}
+  \label{fig:satellid-app-results_edit}
+\end{figure}
+
+\begin{figure}[!htp]
+  \centering
+  \includegraphics[height=10cm]{\dir/include/satellid-app-results_delete.png}
+  \caption{Screenshot of DELETE interaction}
+  \label{fig:satellid-app-results_delete}
+\end{figure}
+
 
 % --------------------------------------------------
 \subsection{Open Sourcing}

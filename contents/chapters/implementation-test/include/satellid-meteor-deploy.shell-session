@@ -1,0 +1,4 @@
+$ meteor deploy satellid.meteor.com
+...
+Deploying to satellid.meteor.com.
+Now serving at http://satellid.meteor.com

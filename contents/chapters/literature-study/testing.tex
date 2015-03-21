@@ -56,8 +56,9 @@ For example, a simple \ac{BREAD}-enabled application tested for its ability to b
 \end{wrapfigure}
 
 Automated testing of those various types of testing are possible with the help of a testing framework.
-Specifically with Meteor framework, there is a testing framework package called Velocity.
-Velocity wraps and supports test framework, library, and reporting (that supported in JavaScript) like Mocha, Chai, Jasmine, Cucumber, and much others also for \ac{TDD}, \ac{BDD}, and \ac{ATDD}; making them reactive as well.
+Specifically with Meteor framework, there is a unified testing framework and test runner package called Velocity.
+Velocity wraps, supports, and runs other test framework, library, and reporting (that supported in JavaScript) like Mocha, Chai, Jasmine, Cucumber, and much others also for \ac{TDD}, \ac{BDD}, and \ac{ATDD}; making them reactive as well.
+So with Velocity, testing could include more than one testing framework, seamlessly.
 
 % --------------------------------------------------
 \subsection{Test First Workflow}
@@ -115,7 +116,7 @@ Below listing \autoref{lst:gherkin-sample} is an example of a feature file in Gh
 \end{listing}
 
 After that, automate all of those steps in the scenarios within the test code based on that.
-The steps will be implemented as an executable code, like in \autoref{lst:gherkin-executable}.
+The steps will be implemented as an executable code, like in listing \autoref{lst:gherkin-executable}.
 
 \begin{listing}[!htb]
 \caption{Example of an executable feature file}
