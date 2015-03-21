@@ -1,0 +1,36 @@
+\chapter{Source Code}
+\label{apx:source-code}
+
+The core Satellid code repository with Meteor including Git, is structured like this:
+
+\dirtree{%
+.1 satellid-meteor.
+.2 .git.
+.2 .meteor.
+.2 app.js.
+.2 app.html.
+.2 app.css.
+.2 packages.
+.2 tests.
+}
+
+\noindent Below are the main source code of Satellid in Meteor, both server side and client side.
+The complete source code is available at \url{https://github.com/satellid/satellid-meteor}.
+
+\begin{listing}[htbp]
+  \caption{Satellid main JavaScript code}
+  \inputminted{javascript}{\dir/code/app.js}
+  \label{lst:satellid-code-js}
+\end{listing}
+
+\begin{listing}[htbp]
+  \caption{Satellid main HTML code}
+  \inputminted{html}{\dir/code/app.html}
+  \label{lst:satellid-code-html}
+\end{listing}
+
+\begin{listing}[htbp]
+  \caption{Satellid main CSS code}
+  \inputminted{css}{\dir/code/app.css}
+  \label{lst:satellid-code-css}
+\end{listing}

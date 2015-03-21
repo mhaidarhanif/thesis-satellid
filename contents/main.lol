@@ -19,10 +19,6 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \contentsline {listing}{\numberline {1}{\ignorespaces MongoDB data code sample\relax }}{24}{listing.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {listing}{\numberline {2}{\ignorespaces JavaScript code sample\relax }}{26}{listing.2}
@@ -57,9 +53,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {listing}{\numberline {13}{\ignorespaces Satellid client side code snippets\relax }}{56}{listing.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {listing}{\numberline {14}{\ignorespaces Committing and pushing the repo with Git\relax }}{56}{listing.14}
+\contentsline {listing}{\numberline {14}{\ignorespaces Runnin Meteor app locally\relax }}{56}{listing.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {listing}{\numberline {15}{\ignorespaces Committing and pushing the repo with Git\relax }}{56}{listing.15}
+\contentsline {listing}{\numberline {15}{\ignorespaces Deploying Meteor app\relax }}{56}{listing.15}
 \defcounter {refsection}{0}\relax 
 \contentsline {listing}{\numberline {16}{\ignorespaces Committing and pushing the repo with Git\relax }}{60}{listing.16}
 \defcounter {refsection}{0}\relax 
@@ -70,3 +66,13 @@
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {listing}{\numberline {17}{\ignorespaces Satellid main JavaScript code\relax }}{71}{listing.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {listing}{\numberline {18}{\ignorespaces Satellid main HTML code\relax }}{72}{listing.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {listing}{\numberline {19}{\ignorespaces Satellid main CSS code\relax }}{72}{listing.19}
