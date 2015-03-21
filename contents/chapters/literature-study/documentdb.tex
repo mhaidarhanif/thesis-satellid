@@ -1,7 +1,7 @@
 \section{Document Database}
 \label{sec:document-database}
 
-Because we're using a \ac{NoSQL} database technology that specifically is a document database, we need to choose at least one of the main database that will be used.
+Because the software is going to use \ac{NoSQL} database technology that specifically is a document database, there will be options to choose, at least one of the main database that will be used.
 Some of the popular document databases \ac{NoSQL} with document-oriented database are MongoDB and CouchDB.
 
 % --------------------------------------------------
@@ -37,7 +37,7 @@ In Mongo, there are some simple concepts that used:
 To summarize, MongoDB is made up of databases which contain collections.
 A collection is made up of documents. Each document is made up of fields.
 Collections can be indexed, which improves lookup and sorting performance.
-Finally, when we get data from MongoDB we do so through a cursor whose actual execution is delayed until necessary.~\autocite{Seguin2010MongoDB}
+Finally, the data that got from MongoDB go through a cursor whose actual execution is delayed until necessary.~\autocite{Seguin2010MongoDB}
 Listing \autoref{lst:mongo-sample} is an example of how data in Mongo looks, represented in \ac{JSON}.
 
 \begin{listing}[htbp]
@@ -74,5 +74,5 @@ MongoDB has many advantages over others because of its:
 \end{wrapfigure}
 
 Other alternative available for \ac{NoSQL} is CouchDB\index{CouchDB}, created by The Apache Software Foundation, a relaxing and very flexible document database built of the web that mostly used for storage system.
-We actually planned to use it as the main database, but regarding to the framework of choice (later will be discussed), only MongoDB that can be used for now.
+It actually can be planned to be used as the main database, but regarding to the framework of choice that later will be discussed, only MongoDB that can be used for now.
 The data content itself is not very different with MongoDB.

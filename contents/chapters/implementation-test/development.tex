@@ -11,36 +11,37 @@ JavaScript and Meteor are used on both of the sides, while Node.js is used on th
 JavaScript is chosen more solely because it is the primary language of the Web.
 Meteor is chosen because it is heavily based on JavaScript and easy to learn than any other framework out there.
 While in code development, JavaScript and CoffeeScript are both used for the logic implementation.
-Below there are snippets of the code, \autoref{lst:satellid-code-server} is in server side and \autoref{lst:satellid-code-client} is in client side.
+Below there are snippets of the code, listing \autoref{lst:satellid-code-server} is in server side and listing \autoref{lst:satellid-code-client} is in client side.
 Even meteor can read all of the code in any place within the same reposutory, in actual repository however there is a convention to put the server side code into the \verb|server| folder and the client side code into the \verb|client| folder.
 Both listings are intentedly to only show at a glance the upmost parts that separate each unit side.
 
-\begin{listing}[htbp]
+\begin{listing}[ht]
   \caption{Satellid server side code snippets}
   \inputminted{javascript}{\dir/include/code/satellid-server.js}
   \label{lst:satellid-code-server}
 \end{listing}
 
-\begin{listing}[htbp]
+\begin{listing}[ht]
   \caption{Satellid client side code snippets}
   \inputminted{javascript}{\dir/include/code/satellid-client.js}
   \label{lst:satellid-code-client}
 \end{listing}
 
+\clearpage
 % --------------------------------------------------
 \subsection{Running and Deployment}
 
-Running Satellid on our own local environment is just with \verb|meteor run| command:
+Running Satellid on local environment is with \verb|meteor run| command:
 
-\begin{listing}[!h]
-\caption{Runnin Meteor app locally}
+\begin{listing}[h]
+\caption{Running Meteor app locally}
 \inputminted{shell-session}{\dir/include/satellid-meteor-run.shell-session}
 \label{lst:satellid-run}
 \end{listing}
 
-Deploying Satellid to the Internet with Meteor is easy with the following \verb|meteor deploy appname.meteor.com| command:
+Deploying Satellid to the Internet with Meteor is with the following \verb|meteor deploy appname.meteor.com| command:
 
-\begin{listing}[!h]
+\begin{listing}[h]
 \caption{Deploying Meteor app}
 \inputminted{shell-session}{\dir/include/satellid-meteor-deploy.shell-session}
 \label{lst:satellid-deploy}
