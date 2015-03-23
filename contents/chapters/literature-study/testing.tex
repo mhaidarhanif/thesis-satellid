@@ -101,27 +101,33 @@ The first phase is to define the specifications into a both human-readable and b
 The language commonly used is Gherkin, a pseudonatural language to specify features, more likely to be examples or state estimation.
 The process or usage to implement the test is to
 \begin{inparaenum}[\itshape 1\upshape)]
-\item parse the Gherkin syntax by writing each step definitions
-\item match those steps with test functions that written after
-\item execute the matched test functions with the syntax, it will pass or fail
-\item generate the report from performed tests
+\item parse the Gherkin syntax by writing each step definitions,
+\item match those steps with test functions that written after,
+\item execute the matched test functions with the syntax, it will pass or fail, and then
+\item generate the report from performed tests.
 \end{inparaenum}
 
-Below listing \autoref{lst:gherkin-sample} is an example of a feature file in Gherkin syntax.
+Listing \autoref{lst:gherkin-sample} is an example of a feature file in Gherkin syntax.
 
-\begin{listing}[htb]
+\begin{listing}[!htb]
 \caption{Example of feature file in Gherkin}
 \inputminted{ruby}{\dir/include/gherkin-sample.txt}
 \label{lst:gherkin-sample}
 \end{listing}
 
 After that, automate all of those steps in the scenarios within the test code based on that.
-The steps will be implemented as an executable code, like in listing \autoref{lst:gherkin-executable}.
+The steps will be implemented as an executable code, like in listing \autoref{lst:gherkin-executable-1} (variant $1$) and listing \autoref{lst:gherkin-executable-2} (variant $2$).
 
 \begin{listing}[!htb]
-\caption{Example of an executable feature file}
-\inputminted{javascript}{\dir/include/gherkin-executable.js}
-\label{lst:gherkin-executable}
+\caption{Example of an executable feature file (variant 1)}
+\inputminted{javascript}{\dir/include/gherkin-executable-1.js}
+\label{lst:gherkin-executable-1}
+\end{listing}
+
+\begin{listing}[!htb]
+\caption{Example of an executable feature file (variant 2)}
+\inputminted{javascript}{\dir/include/gherkin-executable-2.js}
+\label{lst:gherkin-executable-2}
 \end{listing}
 
 These are qualified as the acceptance tests, drive the value or criteria as described and will be implemented as the actual code once the test requirements are fit.
