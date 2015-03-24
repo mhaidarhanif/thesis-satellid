@@ -1,8 +1,35 @@
 \section{Analysis}
 \label{sec:analysis}
 
-These analyses includes target user, specific cases of user types, and user stories.
+These analyses includes requirements, target user, specific cases of user types, and user stories.
 All of them are belong into the \textit{discover} process, analyzing and writing initial requirements with acceptance criteria.
+
+% --------------------------------------------------
+\subsection{Technology Requirements}
+
+Below is the recommended or chosen requirements for system or software that needed to minimally able to build the implementation of Satellid and then run it locally or even via the network.
+These requirements for software development are not necessarily the same and may change in the future.
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{ |l||l| }
+\hline
+Category & Software  \\ \hline
+\hline
+%\shortstack{Data\\Format} & JSON & ENML \\ \hline
+Operating System      &  Linux $3.13$ or Mac OS X $10.7$  \\ \hline
+Distribution (Linux)  &  Ubuntu $14.04$ LTS  \\ \hline
+Processor  &  Intel Core $2.20$ GHz   \\ \hline
+RAM        &  $4$ GB                  \\ \hline
+Language   &  JavaScript V8 $3.14.x$  \\ \hline
+Framework  &  Meteor $1.0.x$ and Velocity $0.4.x$  \\ \hline
+Platform   &  Node.js $0.10.x$            \\ \hline
+Database   &  MongoDB $2.6.x$ or $3.0.x$  \\ \hline
+Browser    &  Google Chrome $41$ or Mozilla Firefox $36$ \\ \hline
+\end{tabular}
+\caption[Chosen technology requirements]{Chosen technology requirements to build and run Satellid}
+\label{table:tech-requirements}
+\end{table}
 
 % --------------------------------------------------
 \subsection{Target User}
@@ -17,7 +44,7 @@ Diagonal product can be too risky if there is no particular focus, so first a de
 The general ones are individuals and variety of teams.
 The specific ones are students, educators, teachers, managers, creatives, developers, designers, entrepreneurs, software and information architect, strategy consultants, research analysts, organization managers, data analysts, even \ac{CIO}, \ac{CTO}, and \ac{CEO}.
 The culmination of this product is a general purpose type of tool that benefits both side of the worlds.
-But as explained in \autoref{sec:problem-scope}, the product can't designed for everyone in the beginning.
+But as explained in the problem scope, the product can't designed for everyone in the beginning.
 So only person who frequently gather and need to manage their knowledge at almost everytime is chosen.
 Because who is designed for is known, ideally the analysis can be continued and later start the design.
 So it back again to the general and specific ones who do that kind of particular activity in everyday life.
