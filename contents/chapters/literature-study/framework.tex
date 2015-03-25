@@ -128,21 +128,27 @@ meteor
 By default, it runs the app via \ac{URL} \verb|http://localhost:3000| and can be run via browser.
 If there is an edit in one or some of the files, Meteor will rebuild and update the app automatically with the new code and content.
 \noindent Below listing \autoref{lst:meteor-html}, \autoref{lst:meteor-js}, and \autoref{lst:meteor-css} are the actual source code of a very basic Meteor application that built with those commands.
+In addition to common languages such as JavaScript, \ac{HTML}, and \ac{CSS}, there are also those preprocessors that can be used in Meteor with provided packages:
+\begin{inparaenum}[\itshape 1\upshape)]
+\item CoffeeScript for JavaScript,
+\item Jade for \ac{HTML}, and
+\item Stylus for \ac{CSS}.
+\end{inparaenum}
 
-\begin{listing}[!ht]
-\caption{View (HTML) part of Meteor}
+\begin{listing}[htp]
+\caption{View part of Meteor (HTML)}
 \inputminted{html}{\dir/include/meteor/meteor.html}
 \label{lst:meteor-html}
 \end{listing}
 
-\begin{listing}[!ht]
-\caption{Logic (JavaScript) part of Meteor}
+\begin{listing}[htp]
+\caption{Logic part of Meteor (JavaScript)}
 \inputminted{javascript}{\dir/include/meteor/meteor.js}
 \label{lst:meteor-js}
 \end{listing}
 
-\begin{listing}[!ht]
-\caption{Style (CSS) part of Meteor}
+\begin{listing}[htp]
+\caption{Style part of Meteor (CSS)}
 \inputminted{css}{\dir/include/meteor/meteor.css}
 \label{lst:meteor-css}
 \end{listing}

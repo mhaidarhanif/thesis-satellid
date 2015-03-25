@@ -14,6 +14,9 @@ While in code development, JavaScript and CoffeeScript are both used for the log
 Below there are snippets of the code, listing \autoref{lst:satellid-code-server} is in server side and listing \autoref{lst:satellid-code-client} is in client side.
 Even meteor can read all of the code in any place within the same reposutory, in actual repository however there is a convention to put the server side code into the \verb|server| folder and the client side code into the \verb|client| folder.
 Both listings are intentedly to only show at a glance the upmost parts that separate each unit side.
+These code segmentation however doesn't always shown explicitly in the syntax itself.
+Because in Meteor, it's possible to exclude the \verb|isServer| or \verb|isClient| method in the client and server code when they're separated into respected folders, \verb|client| and \verb|server| in the project root directory.
+In addition to this unique feature of Meteor, the actual implementation is also using preprocessors, a \ac{HTML} preprocessor named Jade and a \ac{CSS} preprocessor named Stylus.
 
 \begin{listing}[ht]
   \caption{Satellid server side code snippets}

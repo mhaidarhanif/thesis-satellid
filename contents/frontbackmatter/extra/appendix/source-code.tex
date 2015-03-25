@@ -1,36 +1,51 @@
 \chapter{Appendix: Source Code}
 \label{apx:source-code}
 
-The Satellid code repository with Meteor including Git, is structured like this:
+The actual or recent Satellid code repository with Meteor including Git, is structured like this directory tree:
 
 \dirtree{%
 .1 satellid-meteor.
 .2 .git.
 .2 .meteor.
-.2 app.js.
-.2 app.html.
-.2 app.css.
+.2 .snippets.
+.2 both.
+.3 app.coffee.
+.3 collections.coffee.
+.2 client.
+.3 client.coffee.
 .2 packages.
+.2 server.
+.3 server.coffee.
+.2 styles.
+.3 app.stylus.
+.2 templates.
+.3 app.jade.
+.3 templates.jade.
 .2 tests.
+.3 cucumber.
+.4 ....
+.2 start.sh.
 }
 
 \noindent Below are the main source code of Satellid in Meteor, both server side and client side.
-The complete and most updated source code is available at \url{https://github.com/satellid/satellid-meteor}.
+Some inside these included codes are combined together and truncated.
+Main logic code is using CoffeeScript for JavaScript (listing \autoref{lst:satellid-code-coffee}), main view code is using Jade for HTML (listing \autoref{lst:satellid-code-jade}), and main style code is using Stylus for CSS (listing \autoref{lst:satellid-code-styl}).
+The complete and most updated source code is available publicly on GitHub at \url{https://github.com/satellid/satellid-meteor}.
 
-\begin{listing}[!ht]
-  \caption{Satellid main JavaScript code (app.js)}
-  \inputminted{javascript}{\dir/code/app.js}
-  \label{lst:satellid-code-js}
+\begin{listing}[tbp]
+  \caption[Satellid main logic code]{Satellid main logic code CoffeeScript (*.coffee)}
+  \inputminted{coffeescript}{\dir/code/.snippets/satellid.coffee}
+  \label{lst:satellid-code-coffee}
 \end{listing}
 
-\begin{listing}[!ht]
-  \caption{Satellid main HTML code (app.html)}
-  \inputminted{html}{\dir/code/app.html}
-  \label{lst:satellid-code-html}
+\begin{listing}[tbp]
+  \caption[Satellid main view code]{Satellid main view code using Jade (*.jade)}
+  \inputminted{jade}{\dir/code/.snippets/satellid.jade}
+  \label{lst:satellid-code-jade}
 \end{listing}
 
-\begin{listing}[!ht]
-  \caption{Satellid main CSS code (app.css)}
-  \inputminted{css}{\dir/code/app.css}
-  \label{lst:satellid-code-css}
+\begin{listing}[tbp]
+  \caption[Satellid main style code]{Satellid main style code using Stylus (*.stylus)}
+  \inputminted{css}{\dir/code/.snippets/satellid.styl}
+  \label{lst:satellid-code-styl}
 \end{listing}
