@@ -31,6 +31,7 @@ The basic properties of metadata are including ID, Context, Date \& Time (Create
 As already defined, the lists below are the sorted version of prospected key attributes related to single context that needed and can be used.
 Each of them can have category or label if appropriate, even additional custom text.
 Also sometimes blank field is allowed like if there is unknown location and \ac{URL}, while in other condition multiple entries could occur.
+In Satellid, currently these contexts are chosen because they're commonly used in most of the available software tools for managing specific kinds of data, information, or knowledge.
 
 \begin{easylist}
 & Definition
@@ -55,6 +56,10 @@ Also sometimes blank field is allowed like if there is unknown location and \ac{
 
 Other contexts that still classified as miscellaneous or mixed are like Reminder, Story, Rules, Code, Requisites, Manifesto, random notes, etc.
 Simply put, miscellaneous is the knowledge that have not been built its general context or other things that have not prespecified yet.
+
+This contextual system is currently heavily depends on a very flexible data schema like document databases, that one of them is MongoDB.
+Simply, MongoDB can include various kinds of data schema and developer can modify them later.
+Also the main aspect MongoDB is chosen is because its close coupling with the framework that used, which is Meteor.
 
 % --------------------------------------------------
 \subsection{Functionality Flow}

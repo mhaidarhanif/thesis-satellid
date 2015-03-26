@@ -61,7 +61,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {listing}{\numberline {17}{\ignorespaces Committing and pushing the repo with Git\relax }}{63}{listing.17}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {listing}{\numberline {18}{\ignorespaces Snippet of feature file for Satellid in Gherkin\relax }}{64}{listing.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {listing}{\numberline {19}{\ignorespaces Executable feature file for Satellid\relax }}{65}{listing.19}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -73,8 +75,10 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {listing}{\numberline {18}{\ignorespaces Satellid main logic code}}{74}{listing.18}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {listing}{\numberline {19}{\ignorespaces Satellid main view code}}{75}{listing.19}
+\contentsline {listing}{\numberline {20}{\ignorespaces Satellid main logic code}}{75}{listing.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {listing}{\numberline {20}{\ignorespaces Satellid main style code}}{76}{listing.20}
+\contentsline {listing}{\numberline {21}{\ignorespaces Satellid main view code}}{76}{listing.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {listing}{\numberline {22}{\ignorespaces Satellid main style code}}{77}{listing.22}

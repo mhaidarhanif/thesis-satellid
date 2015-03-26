@@ -7,11 +7,13 @@ All of them are belong into the \textit{discover} process, analyzing and writing
 % --------------------------------------------------
 \subsection{Technology Requirements}
 
-Below is the recommended or chosen requirements for system or software with their version, that needed to minimally able to build the implementation of Satellid and then run it locally or even via the network.
+As shown in \autoref{table:tech-requirements}, there are some recommended or chosen requirements of system or software with their version, that needed to minimally able to build the implementation of Satellid and then run it locally or even via the network.
 These requirements for software development are not necessarily the same and may change in the future.
 
 \begin{table}[!h]
 \centering
+\caption[Chosen technology requirements]{Chosen technology requirements to build and run Satellid}
+\label{table:tech-requirements}
 \begin{tabular}{ |l||l| }
 \hline
 Category & Software  \\ \hline
@@ -27,8 +29,6 @@ Platform   &  Node.js $0.10.x$            \\ \hline
 Database   &  MongoDB $2.6.x$ or $3.0.x$  \\ \hline
 Browser    &  Google Chrome $41$ or Mozilla Firefox $36$ \\ \hline
 \end{tabular}
-\caption[Chosen technology requirements]{Chosen technology requirements to build and run Satellid}
-\label{table:tech-requirements}
 \end{table}
 
 % --------------------------------------------------
@@ -87,13 +87,13 @@ The points are estimated by conjecture the required effort, in scale $1, 2, 3, 5
 The things which need to be prioritized in particular sequential order of implementation (based on \ac{BREAD} model) are: Read, Browse, Add, Delete, Edit.
 
 \begin{easylist}
-& $1$: As a System, I need to be run on supported platform and via a network, so that I can be used by User.
-& $1$: As a System, I can connect to the database, so that I can communicate with it.
-& $2$: As a System, I can import the the data without the app opened.
-& $1$: As a User, I can use the app via web browser.
-& $2$: As a User, I can retrieve then read the knowledge that already stored.
-& $3$: As a User, I can browse or search knowledge and browse the search result.
-& $5$: As a User, I can add a new knowledge based on context.
-& $1$: As a User, I can delete a stored knowledge.
-& $3$: As a User, I can edit a stored knowledge.
+& $[1]$ As a System, I need to be run on supported platform and via a network, so that I can be used by User.
+& $[1]$ As a System, I can connect to the database, so that I can communicate with it.
+& $[2]$ As a System, I can import the the data without the app opened.
+& $[1]$ As a User, I can use the app via web browser.
+& $[2]$ As a User, I can retrieve then read the knowledge that already stored.
+& $[3]$ As a User, I can browse or search knowledge and browse the search result.
+& $[5]$ As a User, I can add a new knowledge based on context.
+& $[1]$ As a User, I can delete a stored knowledge.
+& $[3]$ As a User, I can edit a stored knowledge.
 \end{easylist}
